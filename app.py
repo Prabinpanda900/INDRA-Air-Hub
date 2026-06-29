@@ -209,7 +209,8 @@ def get_health_advisory(val, pollutant):
 
 @st.cache_data(ttl=3600)
 def load_base_map():
-    url = "https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson"
+    # Updated to DataMeet's official Survey of India mapped GeoJSON (Includes full J&K/Ladakh/PoK)
+    url = "https://raw.githubusercontent.com/datameet/maps/master/website/docs/data/geojson/states.geojson"
     headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
     try:
         response = requests.get(url.strip(), headers=headers, timeout=15)
