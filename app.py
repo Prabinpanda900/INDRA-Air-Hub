@@ -153,7 +153,6 @@ st.markdown("""
     .cell-status { width: 150px; font-weight: 700; text-align: center; }
     .cell-multiplier { width: 180px; font-size: 14px; color: #a0aec0; text-align: right; }
     
-    /* 🛡️ Phase 4 Alert Card Styles */
     .health-alert-box {
         border-radius: 12px;
         padding: 1rem;
@@ -201,20 +200,12 @@ def get_aqi_branding(val, context_theme):
     else: return {"color": "#7e0023", "label": "Hazardous", "text_color": "#ffffff"}
 
 def get_health_advisory(val, pollutant):
-    """Generates standard EPA-style health advisories based on current values."""
-    if pollutant in ["Temperature", "Humidity"]:
-        return "Weather tracking normal. No active climatic advisories."
-        
-    if val <= 50:
-        return "<span class='health-alert-title' style='color:#55a630;'>🟢 Air Quality Ideal</span><br><span class='health-alert-desc'>Air quality is satisfactory, and air pollution poses little or no risk. Perfect conditions for outdoor activities.</span>"
-    elif val <= 100:
-        return "<span class='health-alert-title' style='color:#ee9b00;'>🟡 Moderate Warning</span><br><span class='health-alert-desc'>Air quality is acceptable. However, there may be a risk for some people, particularly those who are unusually sensitive to air pollution.</span>"
-    elif val <= 150:
-        return "<span class='health-alert-title' style='color:#ca6702;'>🟠 Unhealthy for Sensitive Groups</span><br><span class='health-alert-desc'>Members of sensitive groups may experience health effects. The general public is less likely to be affected. Reduce heavy exertion.</span>"
-    elif val <= 200:
-        return "<span class='health-alert-title' style='color:#d90429;'>🔴 Unhealthy Conditions</span><br><span class='health-alert-desc'>Some members of the general public may experience health effects; sensitive groups may experience more serious health effects. Masks recommended.</span>"
-    else:
-        return "<span class='health-alert-title' style='color:#ff4d4d;'>🚨 HAZARDOUS PROTOCOL</span><br><span class='health-alert-desc'>Health warning of emergency conditions: everyone is more likely to be affected. Stay indoors and use N95 masks if travel is necessary.</span>"
+    if pollutant in ["Temperature", "Humidity"]: return "Weather tracking normal. No active climatic advisories."
+    if val <= 50: return "<span class='health-alert-title' style='color:#55a630;'>🟢 Air Quality Ideal</span><br><span class='health-alert-desc'>Air quality is satisfactory, and air pollution poses little or no risk. Perfect conditions for outdoor activities.</span>"
+    elif val <= 100: return "<span class='health-alert-title' style='color:#ee9b00;'>🟡 Moderate Warning</span><br><span class='health-alert-desc'>Air quality is acceptable. However, there may be a risk for some people, particularly those who are unusually sensitive to air pollution.</span>"
+    elif val <= 150: return "<span class='health-alert-title' style='color:#ca6702;'>🟠 Unhealthy for Sensitive Groups</span><br><span class='health-alert-desc'>Members of sensitive groups may experience health effects. The general public is less likely to be affected. Reduce heavy exertion.</span>"
+    elif val <= 200: return "<span class='health-alert-title' style='color:#d90429;'>🔴 Unhealthy Conditions</span><br><span class='health-alert-desc'>Some members of the general public may experience health effects; sensitive groups may experience more serious health effects. Masks recommended.</span>"
+    else: return "<span class='health-alert-title' style='color:#ff4d4d;'>🚨 HAZARDOUS PROTOCOL</span><br><span class='health-alert-desc'>Health warning of emergency conditions: everyone is more likely to be affected. Stay indoors and use N95 masks if travel is necessary.</span>"
 
 @st.cache_data(ttl=3600)
 def load_base_map():
@@ -356,6 +347,8 @@ def fetch_production_live_stream(geo_india):
             return inject_supplementary_sensor_grid(pd.DataFrame(columns=["timestamp"]), geo_india)
     return inject_supplementary_sensor_grid(pd.DataFrame(columns=["timestamp"]), geo_india)
 
+
+# 🛡️ SPATIAL CONTAINMENT UPDATE: Ocean Spill Prevention Engaged
 def get_gee_satellite_matrix(pollutant_theme, geo_india):
     file_map = {"NO2": "data/satellite/no2.csv", "CO": "data/satellite/co.csv", "SO2": "data/satellite/so2.csv"}
     target_path = Path(__file__).resolve().parent / file_map.get(pollutant_theme, "")
@@ -369,10 +362,25 @@ def get_gee_satellite_matrix(pollutant_theme, geo_india):
     simulated_points = []
     np.random.seed(sum(ord(c) for c in pollutant_theme))
     
-    for _ in range(600):
-        lat = np.random.uniform(12.0, 31.0)
-        lon = np.random.uniform(73.0, 88.0)
+    has_boundary = not geo_india.empty
+    if has_boundary:
+        india_polygon = geo_india.union_all() if hasattr(geo_india, "union_all") else geo_india.unary_union
         
+    attempts = 0
+    # Uses a while loop to ensure we hit exactly 600 nodes strictly on land
+    while len(simulated_points) < 600 and attempts < 4000:
+        attempts += 1
+        lat = np.random.uniform(8.4, 33.0)
+        lon = np.random.uniform(68.0, 95.0)
+        
+        if has_boundary:
+            if not Point(lon, lat).within(india_polygon):
+                continue # Rejects ocean anomalies
+        else:
+            # Fallback math constraints if map fetch fails
+            if lat < 20.0 and (lon < 73.0 or lon > 86.0): continue
+            if lat < 15.0 and (lon < 74.0 or lon > 80.0): continue
+            
         density_weight = np.random.randint(15, 140)
         if 23.0 < lat < 28.0 and 77.0 < lon < 86.0: 
             density_weight += np.random.randint(60, 150)
@@ -380,6 +388,7 @@ def get_gee_satellite_matrix(pollutant_theme, geo_india):
         simulated_points.append({"latitude": lat, "longitude": lon, "density": density_weight})
                 
     return pd.DataFrame(simulated_points)
+
 
 def calculate_idw_prediction(target_lat, target_lon, df_pollutant, power=2):
     if df_pollutant.empty: return 45
@@ -518,7 +527,6 @@ with layout_panel_left:
             </div>
         """, unsafe_allow_html=True)
 
-    # 🛡️ PHASE 4: Dynamic Health Advisory Box Integration
     alert_html = get_health_advisory(master_val, param_theme)
     st.markdown(f"<div class='health-alert-box' style='background-color: {badge_bg}15;'>{alert_html}</div>", unsafe_allow_html=True)
         
@@ -571,7 +579,6 @@ with layout_panel_left:
     )
     st.plotly_chart(fig_mini, use_container_width=True, config={'displayModeBar': False})
 
-    # 📥 PHASE 4: Local CSV Data Export Integration
     st.markdown("<hr style='border-color: #1f242d; margin: 1rem 0;'>", unsafe_allow_html=True)
     if not df_loc_pool.empty:
         csv_data = df_loc_pool.to_csv(index=False).encode('utf-8')
