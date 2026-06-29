@@ -166,7 +166,7 @@ st.markdown("""
     div[data-testid="stPopover"] {
         position: fixed !important;
         bottom: 30px !important;  
-        right: 90px !important;   /* Shifted 90px left to clear Streamlit's Deploy button */
+        right: 90px !important;   
         z-index: 99999 !important;
         width: 65px !important;
         height: 65px !important;
@@ -262,10 +262,11 @@ def get_health_advisory(val, pollutant):
 
 @st.cache_data(ttl=3600)
 def load_base_map():
-    url = "https://raw.githubusercontent.com/datameet/maps/master/Country/india-composite.geojson"
+    # Ultra-reliable GitHub Gist GeoJSON to prevent boundary timeouts
+    url = "https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson"
     headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
     try:
-        response = requests.get(url.strip(), headers=headers, timeout=25)
+        response = requests.get(url.strip(), headers=headers, timeout=15)
         response.raise_for_status()
         return gpd.read_file(io.StringIO(response.text))
     except Exception as e:
@@ -305,6 +306,7 @@ def inject_supplementary_sensor_grid(df_live, geo_india):
                 "pollutant": p, "timestamp": current_time, "aqi": calculated_val
             })
             
+    # Bulletproof Grid Generator: Packs the map heavily and strictly crops out the ocean
     has_boundary = not geo_india.empty
     if has_boundary:
         india_polygon = geo_india.union_all() if hasattr(geo_india, "union_all") else geo_india.unary_union
@@ -312,28 +314,29 @@ def inject_supplementary_sensor_grid(df_live, geo_india):
     placed_dots = 0
     attempts = 0
     
-    while placed_dots < 150 and attempts < 3000:
+    while placed_dots < 150 and attempts < 4000:
         attempts += 1
         lat = np.random.uniform(8.4, 37.0)
         lon = np.random.uniform(68.0, 97.0)
         
         if has_boundary:
-            pt = Point(lon, lat)
-            if not pt.within(india_polygon):
+            if not Point(lon, lat).within(india_polygon):
                 continue
         else:
             if lat < 20.0 and (lon < 73.0 or lon > 86.0): continue
             if lat < 15.0 and (lon < 74.0 or lon > 80.0): continue
             
-        p = np.random.choice(pollutants)
-        val = np.random.randint(25, 230)
-        if p == "Temperature": val = np.random.randint(26, 43)
-        if p == "Humidity": val = np.random.randint(20, 80)
-        
-        simulated_rows.append({
-            "state": "Subcontinent Grid", "city": "Grid Node", "station": f"Mesh Marker Sub-{placed_dots}",
-            "latitude": lat, "longitude": lon, "value": val, "pollutant": p, "timestamp": current_time, "aqi": val
-        })
+        # GUARANTEES a dot exists no matter what pollutant dropdown is selected
+        for p in pollutants:
+            val = np.random.randint(25, 230)
+            if p == "Temperature": val = np.random.randint(26, 43)
+            if p == "Humidity": val = np.random.randint(20, 80)
+            
+            simulated_rows.append({
+                "state": "Subcontinent Grid", "city": "Grid Node", "station": f"Mesh Marker Sub-{placed_dots}",
+                "latitude": lat, "longitude": lon, "value": val, "pollutant": p, "timestamp": current_time, "aqi": val
+            })
+            
         placed_dots += 1
 
     df_supplementary = pd.DataFrame(simulated_rows)
@@ -844,6 +847,7 @@ def handle_chat():
         st.session_state.indra_chat_history.append({"role": "assistant", "content": reply})
         st.session_state.chat_input_val = ""
 
+# Ensure popover forces False container width
 with st.popover("🤖", use_container_width=False):
     st.markdown("<h4 style='margin:0; color:#ffffff;'>INDRA AI Core</h4>", unsafe_allow_html=True)
     st.markdown("<p style='font-size:12px; color:#a0aec0; margin-bottom:1rem;'>Ask me about Air Quality metrics, health safety, or system architecture.</p>", unsafe_allow_html=True)
