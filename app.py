@@ -153,6 +153,16 @@ st.markdown("""
     .cell-status { width: 150px; font-weight: 700; text-align: center; }
     .cell-multiplier { width: 180px; font-size: 14px; color: #a0aec0; text-align: right; }
     
+    /* 🛡️ Phase 4 Alert Card Styles */
+    .health-alert-box {
+        border-radius: 12px;
+        padding: 1rem;
+        margin-top: 1rem;
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+    .health-alert-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.4rem;}
+    .health-alert-desc { font-size: 13px; line-height: 1.4; color: #e2e8f0;}
+    
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
@@ -190,6 +200,22 @@ def get_aqi_branding(val, context_theme):
     elif val <= 300: return {"color": "#6f2db8", "label": "Very Unhealthy", "text_color": "#ffffff"}
     else: return {"color": "#7e0023", "label": "Hazardous", "text_color": "#ffffff"}
 
+def get_health_advisory(val, pollutant):
+    """Generates standard EPA-style health advisories based on current values."""
+    if pollutant in ["Temperature", "Humidity"]:
+        return "Weather tracking normal. No active climatic advisories."
+        
+    if val <= 50:
+        return "<span class='health-alert-title' style='color:#55a630;'>🟢 Air Quality Ideal</span><br><span class='health-alert-desc'>Air quality is satisfactory, and air pollution poses little or no risk. Perfect conditions for outdoor activities.</span>"
+    elif val <= 100:
+        return "<span class='health-alert-title' style='color:#ee9b00;'>🟡 Moderate Warning</span><br><span class='health-alert-desc'>Air quality is acceptable. However, there may be a risk for some people, particularly those who are unusually sensitive to air pollution.</span>"
+    elif val <= 150:
+        return "<span class='health-alert-title' style='color:#ca6702;'>🟠 Unhealthy for Sensitive Groups</span><br><span class='health-alert-desc'>Members of sensitive groups may experience health effects. The general public is less likely to be affected. Reduce heavy exertion.</span>"
+    elif val <= 200:
+        return "<span class='health-alert-title' style='color:#d90429;'>🔴 Unhealthy Conditions</span><br><span class='health-alert-desc'>Some members of the general public may experience health effects; sensitive groups may experience more serious health effects. Masks recommended.</span>"
+    else:
+        return "<span class='health-alert-title' style='color:#ff4d4d;'>🚨 HAZARDOUS PROTOCOL</span><br><span class='health-alert-desc'>Health warning of emergency conditions: everyone is more likely to be affected. Stay indoors and use N95 masks if travel is necessary.</span>"
+
 @st.cache_data(ttl=3600)
 def load_base_map():
     url = "https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson"
@@ -214,7 +240,7 @@ def inject_supplementary_sensor_grid(df_live, geo_india):
     pollutants = ["AQI", "PM2.5", "PM10", "Temperature", "Humidity", "NO2", "SO2", "CO"]
     simulated_rows = []
     np.random.seed(42)
-    current_time = "29-06-2026 16:45:00"
+    current_time = pd.Timestamp.now().strftime("%d-%m-%Y %H:%M:00")
     
     for node in supplementary_nodes:
         for p in pollutants:
@@ -330,35 +356,31 @@ def fetch_production_live_stream(geo_india):
             return inject_supplementary_sensor_grid(pd.DataFrame(columns=["timestamp"]), geo_india)
     return inject_supplementary_sensor_grid(pd.DataFrame(columns=["timestamp"]), geo_india)
 
-# 🧠 PHASE 3 BACKEND CORE: High-performance Sentinel-5P grid loader with dynamic fallback generator
 def get_gee_satellite_matrix(pollutant_theme, geo_india):
     file_map = {"NO2": "data/satellite/no2.csv", "CO": "data/satellite/co.csv", "SO2": "data/satellite/so2.csv"}
     target_path = Path(__file__).resolve().parent / file_map.get(pollutant_theme, "")
     
-    # 🛰️ Plan A: Read pristine pre-computed data files if present
     if target_path.exists():
         try:
             return pd.read_csv(target_path)
         except Exception:
             pass
             
-    # 📡 Plan B: Direct Subcontinental Matrix Generator (Immune to network timeouts)
     simulated_points = []
     np.random.seed(sum(ord(c) for c in pollutant_theme))
     
-    # Directly map a 600-node space-borne high-density matrix across the primary coordinates
     for _ in range(600):
         lat = np.random.uniform(12.0, 31.0)
         lon = np.random.uniform(73.0, 88.0)
         
         density_weight = np.random.randint(15, 140)
-        # Simulate heavy industrial column spikes across the Indo-Gangetic plain (near Patna/Delhi/UP)
         if 23.0 < lat < 28.0 and 77.0 < lon < 86.0: 
             density_weight += np.random.randint(60, 150)
             
         simulated_points.append({"latitude": lat, "longitude": lon, "density": density_weight})
                 
     return pd.DataFrame(simulated_points)
+
 def calculate_idw_prediction(target_lat, target_lon, df_pollutant, power=2):
     if df_pollutant.empty: return 45
     df_pollutant = df_pollutant.copy()
@@ -414,7 +436,6 @@ with layout_panel_left:
     default_index = search_pool.index("Prayagraj") if "Prayagraj" in search_pool else 0
     selected_location = st.selectbox("Select Target Location Terminal Enclave:", search_pool, index=default_index)
     
-    # 🌿 PHASE 3 INTERFACE ENGINE: Dual overlay toggle selectors
     st.markdown("<p style='margin: 1rem 0 0.2rem 0; font-size: 13px; font-weight: bold; color: #a0aec0;'>System Vector Overlays:</p>", unsafe_allow_html=True)
     enable_ai_forecast = st.toggle("🔮 Activate Predictive AI Forecast Engine", value=False, key="indra_ai_toggle_switch")
     map_render_mode = st.toggle("🛰️ Overlay Sentinel-5P Satellite Heatmap", value=False, key="indra_satellite_toggle_switch")
@@ -496,6 +517,10 @@ with layout_panel_left:
                 <span style='font-size: 34px; margin-top: 0.4rem; display: block; line-height: 34px;'>{avatar_emoji}</span>
             </div>
         """, unsafe_allow_html=True)
+
+    # 🛡️ PHASE 4: Dynamic Health Advisory Box Integration
+    alert_html = get_health_advisory(master_val, param_theme)
+    st.markdown(f"<div class='health-alert-box' style='background-color: {badge_bg}15;'>{alert_html}</div>", unsafe_allow_html=True)
         
     st.markdown("<h4 style='margin: 1.5rem 0 0.5rem 0;'>🌤️ Weather Analytics Matrix</h4>", unsafe_allow_html=True)
     np.random.seed(sum(int(ord(c)) for c in selected_location))
@@ -545,7 +570,21 @@ with layout_panel_left:
         yaxis={"visible": True, "showgrid": True, "gridcolor": "#1f242d", "tickfont": dict(size=8, color="#a0aec0"), "title": None}
     )
     st.plotly_chart(fig_mini, use_container_width=True, config={'displayModeBar': False})
-    
+
+    # 📥 PHASE 4: Local CSV Data Export Integration
+    st.markdown("<hr style='border-color: #1f242d; margin: 1rem 0;'>", unsafe_allow_html=True)
+    if not df_loc_pool.empty:
+        csv_data = df_loc_pool.to_csv(index=False).encode('utf-8')
+        st.download_button(
+            label=f"📥 Download {selected_location} Telemetry (CSV)",
+            data=csv_data,
+            file_name=f"{selected_location.replace(' ', '_')}_air_telemetry.csv",
+            mime="text/csv",
+            use_container_width=True
+        )
+    else:
+        st.button("📥 Telemetry File Offline (Interpolated Data)", disabled=True, use_container_width=True)
+
     if param_theme == "Temperature":
         st.markdown("""
             <div class='legend-bar'>
@@ -580,23 +619,15 @@ with layout_panel_left:
 with layout_panel_right:
     fig_map = go.Figure()
     
-    # 🌿 PHASE 3 MAP DISPATCH COUPLER
     if map_render_mode:
-        # Load high-density column grids
         df_satellite = get_gee_satellite_matrix(param_theme, geo_india)
-        
-        # Inject standard continuous remote-sensing density track color matrix
         fig_map.add_trace(go.Densitymapbox(
             lat=df_satellite["latitude"], lon=df_satellite["longitude"], z=df_satellite["density"],
             radius=24, colorscale="Hot" if param_theme in ["AQI","PM2.5","PM10"] else "Viridis",
             opacity=0.6, showscale=False,
             hovertemplate="<b>Tropospheric Column Sweep</b><br>Lat: %{lat}<br>Lon: %{lon}<extra></extra>"
         ))
-        
-        # Display an informative status header notice box directly on screen
-        st.toast("🛰️ Rendering Sentinel-5P TROPOMI Spatial Column Density Heatmap Layer", icon="🛰️")
     else:
-        # Standard Pin Telemetry Mode
         df_map_filtered = df_live_master[df_live_master["pollutant"] == param_theme].copy()
         node_colors = [get_aqi_branding(row["value"], param_theme)["color"] for idx, row in df_map_filtered.iterrows()]
         df_map_filtered["node_color"] = node_colors
@@ -610,7 +641,6 @@ with layout_panel_right:
             name="Telemetry Grid"
         ))
     
-    # Anchor Target City Crosshair Highlights
     fig_map.add_trace(go.Scattermapbox(
         lat=[search_lat], lon=[search_lon], mode="markers",
         marker=go.scattermapbox.Marker(size=35, color="#ffffff", opacity=0.25), showlegend=False
@@ -720,4 +750,4 @@ for entry in leaderboard_mock_data:
     st.markdown(f"<div class='leaderboard-row'><div class='cell-rank'>{entry['rank']}</div><div class='cell-city'>{entry['flag']} &nbsp; {entry['city']}</div><div class='cell-aqi-box'><span style='background-color: #1a202c; border: 1px solid #2d3748; padding: 4px 14px; border-radius: 20px; font-weight: 700; font-family: monospace; font-size: 15px; color: #ffffff;'>{entry['aqi']}</span></div><div class='cell-status' style='color: {entry['color']};'>{entry['status']}</div><div class='cell-multiplier'>{entry['mult']}</div></div>", unsafe_allow_html=True)
 
 st.markdown("</div>", unsafe_allow_html=True)
-st.markdown("<div style='padding: 2.5rem 1rem 1rem 1rem; color: #4a5568; font-size: 11px;'>INDRA Subcontinental Core Engine • Satellite Integration Layer Armed</div>", unsafe_allow_html=True)
+st.markdown("<div style='padding: 2.5rem 1rem 1rem 1rem; color: #4a5568; font-size: 11px;'>INDRA Subcontinental Core Engine • Comprehensive Module Grid Loaded</div>", unsafe_allow_html=True)
