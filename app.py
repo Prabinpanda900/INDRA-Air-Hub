@@ -162,11 +162,11 @@ st.markdown("""
     .health-alert-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.4rem;}
     .health-alert-desc { font-size: 13px; line-height: 1.4; color: #e2e8f0;}
     
-    /* 🤖 RECTIFIED: Shifted Bot & Streamlit Watermark Removal */
+    /* 🤖 RECTIFIED: Shifted Bot to dodge Streamlit badging & killed the dropdown arrow */
     div[data-testid="stPopover"] {
         position: fixed !important;
-        bottom: 80px !important;  
-        right: 40px !important;   
+        bottom: 30px !important;  
+        right: 90px !important;   /* Shifted 90px left to clear Streamlit's Deploy button */
         z-index: 99999 !important;
         width: 65px !important;
         height: 65px !important;
@@ -198,8 +198,12 @@ st.markdown("""
         padding: 0 !important;
         line-height: 1 !important;
     }
-    div[data-testid="stPopover"] button svg {
+    /* Kills the popover dropdown arrow */
+    div[data-testid="stPopover"] button svg, 
+    div[data-testid="stPopover"] button [data-testid="stIconMaterial"] {
         display: none !important;
+        opacity: 0 !important;
+        width: 0 !important;
     }
     div[data-testid="stPopoverBody"] {
         width: 350px !important;
@@ -209,15 +213,11 @@ st.markdown("""
         box-shadow: 0 20px 25px -5px rgba(0,0,0,0.7) !important;
     }
     
-    /* 🚫 OBLITERATE STREAMLIT UI ELEMENTS */
+    /* 🚫 OBLITERATE INTERNAL UI ELEMENTS */
     #MainMenu {display: none !important; visibility: hidden !important;}
     header {display: none !important; visibility: hidden !important;}
     footer {display: none !important; visibility: hidden !important;}
-    .stDeployButton {display: none !important;}
-    [data-testid="viewerBadge"] {display: none !important;}
     [data-testid="stHeader"] {display: none !important;}
-    .stApp > header {display: none !important;}
-    .stApp > footer {display: none !important;}
     </style>
 """, unsafe_allow_html=True)
 
@@ -844,7 +844,6 @@ def handle_chat():
         st.session_state.indra_chat_history.append({"role": "assistant", "content": reply})
         st.session_state.chat_input_val = ""
 
-# Ensure popover forces False container width
 with st.popover("🤖", use_container_width=False):
     st.markdown("<h4 style='margin:0; color:#ffffff;'>INDRA AI Core</h4>", unsafe_allow_html=True)
     st.markdown("<p style='font-size:12px; color:#a0aec0; margin-bottom:1rem;'>Ask me about Air Quality metrics, health safety, or system architecture.</p>", unsafe_allow_html=True)
