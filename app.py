@@ -256,15 +256,14 @@ def inject_supplementary_sensor_grid(df_live, geo_india):
     df_supplementary = pd.DataFrame(simulated_rows)
     return pd.concat([df_live, df_supplementary], ignore_index=True)
 
-# 🧠 PHASE 2 INTEGRATION: High-Fidelity Live Web API Fetcher with Fallback Security
-@st.cache_data(ttl=900) # Caches data for 15 minutes to respect government API limits
-def download_live_api_stream(geo_india):
+# 🧠 PHASE 2 REPAIR: Removed unused geo_india object to bypass Streamlit Hash error
+@st.cache_data(ttl=900) 
+def download_live_api_stream():
     headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
     all_records = []
     chunk_size = 200  
     current_offset = 0
     
-    # Run a compact 3-page live capture to prevent user wait timeouts
     for page in range(1, 4):
         params = {"api-key": API_KEY, "format": "json", "offset": current_offset, "limit": chunk_size}
         try:
@@ -278,7 +277,7 @@ def download_live_api_stream(geo_india):
                 else: break
             else: break
         except Exception:
-            break # Soft fallback triggers if API server is congested
+            break
             
     if not all_records:
         return None
@@ -308,7 +307,6 @@ def download_live_api_stream(geo_india):
     df_mapped["latitude"] = np.nan
     df_mapped["longitude"] = np.nan
     
-    # Map high-fidelity fallback registry coordinates inline
     for idx, row in df_mapped.iterrows():
         if "city" in df_mapped.columns and pd.notna(row["city"]):
             ct_clean = clean_string(row["city"])
@@ -320,12 +318,11 @@ def download_live_api_stream(geo_india):
     return df_clean
 
 def fetch_production_live_stream(geo_india):
-    # Attempt active web cloud channel pull first
-    df_api = download_live_api_stream(geo_india)
+    # Call clean function without passing unhashable maps
+    df_api = download_live_api_stream()
     if df_api is not None and not df_api.empty:
         return inject_supplementary_sensor_grid(df_api, geo_india)
         
-    # Standard security shield file fallback
     live_path = Path(__file__).resolve().parent / "data" / "live" / "station_aqi_live.csv"
     if live_path.exists():
         try:
@@ -376,8 +373,6 @@ layout_panel_left, layout_panel_right = st.columns([1, 2.3])
 
 with layout_panel_left:
     st.markdown("<div class='aqi-control-card'>", unsafe_allow_html=True)
-    
-    # Dynamic active tag showing if server pulled fresh data or used safe disk cache
     st.markdown("""
         <div style='background-color: #1e252b; padding: 6px 12px; border-radius: 20px; text-align: center; font-size: 11px; font-weight: bold; color: #0284c7; border: 1px solid #2c3640; margin-bottom: 1.2rem; letter-spacing: 0.5px;'>
             ⚡ CPCB LIVE API GATEWAY SYNC ACTIVE
