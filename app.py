@@ -162,34 +162,45 @@ st.markdown("""
     .health-alert-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.4rem;}
     .health-alert-desc { font-size: 13px; line-height: 1.4; color: #e2e8f0;}
     
-    /* Chatbot Floating UI Styling */
+    /* 🤖 RECTIFIED: Hard-locked Floating Chatbot CSS */
     div[data-testid="stPopover"] {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        z-index: 99999;
+        position: fixed !important;
+        bottom: 30px !important;
+        right: 30px !important;
+        z-index: 99999 !important;
+        width: 65px !important;
+        height: 65px !important;
     }
-    div[data-testid="stPopover"] > button {
+    div[data-testid="stPopover"] button {
         background: linear-gradient(135deg, #0284c7, #22c55e) !important;
         color: white !important;
         border-radius: 50% !important;
         width: 65px !important;
+        min-width: 65px !important;
+        max-width: 65px !important;
         height: 65px !important;
+        min-height: 65px !important;
+        max-height: 65px !important;
         border: none !important;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.5) !important;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.6) !important;
         transition: transform 0.3s ease !important;
         padding: 0 !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
-    div[data-testid="stPopover"] > button:hover {
+    div[data-testid="stPopover"] button:hover {
         transform: scale(1.1) !important;
     }
-    div[data-testid="stPopover"] > button p {
-        font-size: 32px !important;
+    div[data-testid="stPopover"] button p {
+        font-size: 30px !important;
         margin: 0 !important;
         padding: 0 !important;
+        line-height: 1 !important;
+    }
+    /* Hide the default Streamlit popover arrow */
+    div[data-testid="stPopover"] button svg {
+        display: none !important;
     }
     div[data-testid="stPopoverBody"] {
         width: 350px !important;
@@ -246,7 +257,6 @@ def get_health_advisory(val, pollutant):
 
 @st.cache_data(ttl=3600)
 def load_base_map():
-    # Official DataMeet composite boundary including full J&K, Ladakh, and PoK
     url = "https://raw.githubusercontent.com/datameet/maps/master/Country/india-composite.geojson"
     headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
     try:
@@ -386,7 +396,6 @@ def fetch_production_live_stream(geo_india):
             return inject_supplementary_sensor_grid(pd.DataFrame(columns=["timestamp"]), geo_india)
     return inject_supplementary_sensor_grid(pd.DataFrame(columns=["timestamp"]), geo_india)
 
-# 🛡️ SPATIAL CONTAINMENT: Ocean Spill Prevention Engaged
 def get_gee_satellite_matrix(pollutant_theme, geo_india):
     file_map = {"NO2": "data/satellite/no2.csv", "CO": "data/satellite/co.csv", "SO2": "data/satellite/so2.csv"}
     target_path = Path(__file__).resolve().parent / file_map.get(pollutant_theme, "")
@@ -817,7 +826,8 @@ def handle_chat():
         st.session_state.indra_chat_history.append({"role": "assistant", "content": reply})
         st.session_state.chat_input_val = ""
 
-with st.popover("🤖"):
+# Ensure popover forces False container width
+with st.popover("🤖", use_container_width=False):
     st.markdown("<h4 style='margin:0; color:#ffffff;'>INDRA AI Core</h4>", unsafe_allow_html=True)
     st.markdown("<p style='font-size:12px; color:#a0aec0; margin-bottom:1rem;'>Ask me about Air Quality metrics, health safety, or system architecture.</p>", unsafe_allow_html=True)
     
