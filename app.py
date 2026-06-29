@@ -335,31 +335,30 @@ def get_gee_satellite_matrix(pollutant_theme, geo_india):
     file_map = {"NO2": "data/satellite/no2.csv", "CO": "data/satellite/co.csv", "SO2": "data/satellite/so2.csv"}
     target_path = Path(__file__).resolve().parent / file_map.get(pollutant_theme, "")
     
-    # 🛰️ Plan A: Read the physical pre-computed file if it exists
+    # 🛰️ Plan A: Read pristine pre-computed data files if present
     if target_path.exists():
         try:
             return pd.read_csv(target_path)
         except Exception:
             pass
             
-    # 📡 Plan B: Generate an active, screenshot-accurate high-density orbital sweep trace if the file is pending
+    # 📡 Plan B: Direct Subcontinental Matrix Generator (Immune to network timeouts)
     simulated_points = []
     np.random.seed(sum(ord(c) for c in pollutant_theme))
     
-    if not geo_india.empty:
-        india_polygon = geo_india.union_all() if hasattr(geo_india, "union_all") else geo_india.unary_union
-        # Render a 450-node space-borne high-density continuous density mesh
-        for _ in range(450):
-            lat = np.random.uniform(8.4, 33.0)
-            lon = np.random.uniform(68.5, 94.5)
-            if Point(lon, lat).within(india_polygon):
-                # Simulate spatial cluster densities around industrial zones
-                density_weight = np.random.randint(15, 180)
-                if 22.0 < lat < 29.0 and 75.0 < lon < 85.0: density_weight += np.random.randint(40, 110) # Indo-Gangetic Spikes
-                simulated_points.append({"latitude": lat, "longitude": lon, "density": density_weight})
+    # Directly map a 600-node space-borne high-density matrix across the primary coordinates
+    for _ in range(600):
+        lat = np.random.uniform(12.0, 31.0)
+        lon = np.random.uniform(73.0, 88.0)
+        
+        density_weight = np.random.randint(15, 140)
+        # Simulate heavy industrial column spikes across the Indo-Gangetic plain (near Patna/Delhi/UP)
+        if 23.0 < lat < 28.0 and 77.0 < lon < 86.0: 
+            density_weight += np.random.randint(60, 150)
+            
+        simulated_points.append({"latitude": lat, "longitude": lon, "density": density_weight})
                 
-    return pd.DataFrame(simulated_points) if simulated_points else pd.DataFrame(columns=["latitude", "longitude", "density"])
-
+    return pd.DataFrame(simulated_points)
 def calculate_idw_prediction(target_lat, target_lon, df_pollutant, power=2):
     if df_pollutant.empty: return 45
     df_pollutant = df_pollutant.copy()
