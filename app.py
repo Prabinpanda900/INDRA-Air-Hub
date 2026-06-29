@@ -764,85 +764,85 @@ st.markdown("</div>", unsafe_allow_html=True)
 st.markdown("<hr style='border-color: #222933; margin-top: 4rem; margin-bottom: 0;'>", unsafe_allow_html=True)
 
 st.markdown("""
-    <div style="background-color: #15191e; padding: 3rem 2rem 1.5rem 2rem; margin-top: 0; font-family: system-ui, -apple-system, sans-serif; border-top: 1px solid #1e252b;">
-        <div style="max-width: 1400px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: space-between;">
-            
-            <div style="flex: 1 1 280px; background-color: #1c2229; padding: 2.5rem 2rem; border-radius: 12px; border: 1px solid #252d37; display: flex; flex-direction: column; justify-content: center; box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);">
-                <span style="font-size: 42px; font-weight: 900; background: linear-gradient(45deg, #0284c7, #22c55e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -1px; font-family: sans-serif;">AQI INDRA</span>
-                <p style="color: #8a99ad !important; font-size: 13px; margin-top: 0.75rem; line-height: 1.6; font-weight: 500;">
-                    Real-time Air quality and Remote-sensing data analytics across the Indian subcontinent.
-                </p>
-            </div>
-
-            <div style="flex: 0 1 180px; min-width: 150px;">
-                <h4 style="color: #ffffff !important; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1.25rem; border-bottom: 2px solid #222933; padding-bottom: 0.5rem;">About INDRA</h4>
-                <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.2; font-size: 13px;">
-                    <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Core Architecture</a></li>
-                    <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">CPCB Data Sync</a></li>
-                    <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Sentinel-5P Tracker</a></li>
-                    <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Environmental Blog</a></li>
-                    <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Climate Change Models</a></li>
-                </ul>
-            </div>
-
-            <div style="flex: 0 1 180px; min-width: 150px;">
-                <h4 style="color: #ffffff !important; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1.25rem; border-bottom: 2px solid #222933; padding-bottom: 0.5rem;">Air Quality Tools</h4>
-                <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.2; font-size: 13px;">
-                    <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Live Telemetry Map</a></li>
-                    <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Predictive AI Engine</a></li>
-                    <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">CPCB Live API Port</a></li>
-                    <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Geospatial Overlays</a></li>
-                    <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Web Dashboard Core</a></li>
-                </ul>
-            </div>
-
-            <div style="flex: 0 1 180px; min-width: 150px;">
-                <h4 style="color: #ffffff !important; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1.25rem; border-bottom: 2px solid #222933; padding-bottom: 0.5rem;">Rankings</h4>
-                <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.2; font-size: 13px;">
-                    <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Live National Standings</a></li>
-                    <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Municipal Node Gauge</a></li>
-                    <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Subcontinental Grid</a></li>
-                    <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Climatological Ranking</a></li>
-                </ul>
-            </div>
-
-            <div style="flex: 1 1 240px; min-width: 220px; font-size: 13px; color: #94a3b8 !important; line-height: 1.8;">
-                <h4 style="color: #ffffff !important; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1.25rem; border-bottom: 2px solid #222933; padding-bottom: 0.5rem;">Terminal Enclave</h4>
-                <div style="margin-bottom: 0.75rem;">
-                    👤 <b style="color: #ffffff;">Developer:</b> Prabin Kumar Panda<br>
-                    🔗 <a href="https://github.com/Prabinpanda900/INDRA-Air-Hub" target="_blank" style="color: #38bdf8 !important; text-decoration: none; font-weight: 600;">Repository Support Desk ↗</a>
-                </div>
-                <div style="margin-bottom: 0.75rem;">
-                    ✉️ <b style="color: #ffffff;">System Queries & Support:</b><br>
-                    <a href="mailto:praveenpanda2@gmail.com" style="color: #94a3b8; text-decoration: none;">praveenpanda2@gmail.com</a>
-                </div>
-                <div style="margin-top: 1rem;">
-                    📍 <b style="color: #ffffff;">Command Headquarters:</b><br>
-                    Backside of Head post office,<br>
-                    Phulbani, Kandhamal, 762001,<br>
-                    Odisha, India
-                </div>
-            </div>
+<div style="background-color: #15191e; padding: 3rem 2rem 1.5rem 2rem; margin-top: 0; font-family: system-ui, -apple-system, sans-serif; border-top: 1px solid #1e252b;">
+    <div style="max-width: 1400px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 2.5rem; justify-content: space-between;">
+        
+        <div style="flex: 1 1 280px; background-color: #1c2229; padding: 2.5rem 2rem; border-radius: 12px; border: 1px solid #252d37; display: flex; flex-direction: column; justify-content: center; box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);">
+            <span style="font-size: 42px; font-weight: 900; background: linear-gradient(45deg, #0284c7, #22c55e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -1px; font-family: sans-serif;">AQI INDRA</span>
+            <p style="color: #8a99ad !important; font-size: 13px; margin-top: 0.75rem; line-height: 1.6; font-weight: 500;">
+                Real-time Air quality and Remote-sensing data analytics across the Indian subcontinent.
+            </p>
         </div>
 
-        <div style="max-width: 1400px; margin: 2rem auto 0 auto; padding-top: 1.5rem; border-top: 1px solid #1e252b; display: flex; justify-content: flex-end; align-items: center; gap: 1rem;">
-            <span style="color: #64748b !important; font-size: 12px; font-weight: 600; text-transform: uppercase;">Connect:</span>
-            <div style="display: flex; gap: 0.75rem;">
-                <a href="https://github.com/Prabinpanda900" target="_blank" style="background-color: #1c2229; border: 1px solid #2d3748; padding: 6px 12px; border-radius: 6px; color: #ffffff; font-size: 12px; font-weight: bold; text-decoration: none;">GitHub</a>
-                <a href="https://www.linkedin.com/in/prabin-kumar-panda" target="_blank" style="background-color: #1c2229; border: 1px solid #2d3748; padding: 6px 12px; border-radius: 6px; color: #ffffff; font-size: 12px; font-weight: bold; text-decoration: none;">LinkedIn</a>
-            </div>
+        <div style="flex: 0 1 180px; min-width: 150px;">
+            <h4 style="color: #ffffff !important; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1.25rem; border-bottom: 2px solid #222933; padding-bottom: 0.5rem;">About INDRA</h4>
+            <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.2; font-size: 13px;">
+                <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Core Architecture</a></li>
+                <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">CPCB Data Sync</a></li>
+                <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Sentinel-5P Tracker</a></li>
+                <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Environmental Blog</a></li>
+                <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Climate Change Models</a></li>
+            </ul>
         </div>
 
-        <div style="max-width: 1400px; margin: 1.5rem auto 0 auto; padding-top: 1rem; border-top: 1px solid #1e252b; display: flex; flex-wrap: wrap; justify-content: space-between; font-size: 11px; color: #475569 !important; font-weight: 500;">
-            <div style="display: flex; gap: 1.25rem;">
-                <span style="cursor:pointer;">Terms & Conditions</span>
-                <span style="cursor:pointer;">Privacy Policy</span>
-                <span style="cursor:pointer;">Open-Source Core</span>
-                <span style="cursor:pointer;">API License Protocols</span>
+        <div style="flex: 0 1 180px; min-width: 150px;">
+            <h4 style="color: #ffffff !important; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1.25rem; border-bottom: 2px solid #222933; padding-bottom: 0.5rem;">Air Quality Tools</h4>
+            <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.2; font-size: 13px;">
+                <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Live Telemetry Map</a></li>
+                <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Predictive AI Engine</a></li>
+                <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">CPCB Live API Port</a></li>
+                <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Geospatial Overlays</a></li>
+                <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Web Dashboard Core</a></li>
+            </ul>
+        </div>
+
+        <div style="flex: 0 1 180px; min-width: 150px;">
+            <h4 style="color: #ffffff !important; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1.25rem; border-bottom: 2px solid #222933; padding-bottom: 0.5rem;">Rankings</h4>
+            <ul style="list-style: none; padding: 0; margin: 0; line-height: 2.2; font-size: 13px;">
+                <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Live National Standings</a></li>
+                <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Municipal Node Gauge</a></li>
+                <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Subcontinental Grid</a></li>
+                <li><a href="#" style="color: #94a3b8 !important; text-decoration: none; font-weight: 500;">Climatological Ranking</a></li>
+            </ul>
+        </div>
+
+        <div style="flex: 1 1 240px; min-width: 220px; font-size: 13px; color: #94a3b8 !important; line-height: 1.8;">
+            <h4 style="color: #ffffff !important; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1.25rem; border-bottom: 2px solid #222933; padding-bottom: 0.5rem;">Terminal Enclave</h4>
+            <div style="margin-bottom: 0.75rem;">
+                👤 <b style="color: #ffffff;">Developer:</b> Prabin Kumar Panda<br>
+                🔗 <a href="https://github.com/Prabinpanda900/INDRA-Air-Hub" target="_blank" style="color: #38bdf8 !important; text-decoration: none; font-weight: 600;">Repository Support Desk ↗</a>
             </div>
-            <div>
-                © 2026 INDRA Air Hub by Prabin Kumar Panda. All rights reserved. &nbsp; • &nbsp; <span style="color:#64748b;">Subcontinental Operational Node</span>
+            <div style="margin-bottom: 0.75rem;">
+                ✉️ <b style="color: #ffffff;">System Queries & Support:</b><br>
+                <a href="mailto:praveenpanda2@gmail.com" style="color: #94a3b8; text-decoration: none;">praveenpanda2@gmail.com</a>
+            </div>
+            <div style="margin-top: 1rem;">
+                📍 <b style="color: #ffffff;">Command Headquarters:</b><br>
+                Backside of Head post office,<br>
+                Phulbani, Kandhamal, 762001,<br>
+                Odisha, India
             </div>
         </div>
     </div>
+
+    <div style="max-width: 1400px; margin: 2rem auto 0 auto; padding-top: 1.5rem; border-top: 1px solid #1e252b; display: flex; justify-content: flex-end; align-items: center; gap: 1rem;">
+        <span style="color: #64748b !important; font-size: 12px; font-weight: 600; text-transform: uppercase;">Connect:</span>
+        <div style="display: flex; gap: 0.75rem;">
+            <a href="https://github.com/Prabinpanda900" target="_blank" style="background-color: #1c2229; border: 1px solid #2d3748; padding: 6px 12px; border-radius: 6px; color: #ffffff; font-size: 12px; font-weight: bold; text-decoration: none;">GitHub</a>
+            <a href="https://www.linkedin.com/in/prabin-kumar-panda" target="_blank" style="background-color: #1c2229; border: 1px solid #2d3748; padding: 6px 12px; border-radius: 6px; color: #ffffff; font-size: 12px; font-weight: bold; text-decoration: none;">LinkedIn</a>
+        </div>
+    </div>
+
+    <div style="max-width: 1400px; margin: 1.5rem auto 0 auto; padding-top: 1rem; border-top: 1px solid #1e252b; display: flex; flex-wrap: wrap; justify-content: space-between; font-size: 11px; color: #475569 !important; font-weight: 500;">
+        <div style="display: flex; gap: 1.25rem;">
+            <span style="cursor:pointer;">Terms & Conditions</span>
+            <span style="cursor:pointer;">Privacy Policy</span>
+            <span style="cursor:pointer;">Open-Source Core</span>
+            <span style="cursor:pointer;">API License Protocols</span>
+        </div>
+        <div>
+            © 2026 INDRA Air Hub by Prabin Kumar Panda. All rights reserved. &nbsp; • &nbsp; <span style="color:#64748b;">Subcontinental Operational Node</span>
+        </div>
+    </div>
+</div>
 """, unsafe_allow_html=True)
