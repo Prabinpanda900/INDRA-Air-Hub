@@ -162,11 +162,11 @@ st.markdown("""
     .health-alert-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.4rem;}
     .health-alert-desc { font-size: 13px; line-height: 1.4; color: #e2e8f0;}
     
-    /* 🤖 RECTIFIED: Hard-locked Floating Chatbot CSS */
+    /* 🤖 RECTIFIED: Shifted Bot & Streamlit Watermark Removal */
     div[data-testid="stPopover"] {
         position: fixed !important;
-        bottom: 30px !important;
-        right: 30px !important;
+        bottom: 80px !important;  /* Shifted up to clear any residual elements */
+        right: 40px !important;   /* Shifted left for better margin */
         z-index: 99999 !important;
         width: 65px !important;
         height: 65px !important;
@@ -210,9 +210,15 @@ st.markdown("""
         box-shadow: 0 20px 25px -5px rgba(0,0,0,0.7) !important;
     }
     
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
+    /* 🚫 OBLITERATE STREAMLIT UI ELEMENTS */
+    #MainMenu {display: none !important; visibility: hidden !important;}
+    header {display: none !important; visibility: hidden !important;}
+    footer {display: none !important; visibility: hidden !important;}
+    .stDeployButton {display: none !important;}
+    [data-testid="viewerBadge"] {display: none !important;}
+    [data-testid="stHeader"] {display: none !important;}
+    .stApp > header {display: none !important;}
+    .stApp > footer {display: none !important;}
     </style>
 """, unsafe_allow_html=True)
 
@@ -257,6 +263,7 @@ def get_health_advisory(val, pollutant):
 
 @st.cache_data(ttl=3600)
 def load_base_map():
+    # Official DataMeet composite boundary including full J&K, Ladakh, and PoK
     url = "https://raw.githubusercontent.com/datameet/maps/master/Country/india-composite.geojson"
     headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
     try:
@@ -396,6 +403,7 @@ def fetch_production_live_stream(geo_india):
             return inject_supplementary_sensor_grid(pd.DataFrame(columns=["timestamp"]), geo_india)
     return inject_supplementary_sensor_grid(pd.DataFrame(columns=["timestamp"]), geo_india)
 
+# 🛡️ SPATIAL CONTAINMENT: Ocean Spill Prevention Engaged
 def get_gee_satellite_matrix(pollutant_theme, geo_india):
     file_map = {"NO2": "data/satellite/no2.csv", "CO": "data/satellite/co.csv", "SO2": "data/satellite/so2.csv"}
     target_path = Path(__file__).resolve().parent / file_map.get(pollutant_theme, "")
