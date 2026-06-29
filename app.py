@@ -209,14 +209,16 @@ def get_health_advisory(val, pollutant):
 
 @st.cache_data(ttl=3600)
 def load_base_map():
-    # Updated to DataMeet's official Survey of India mapped GeoJSON (Includes full J&K/Ladakh/PoK)
-    url = "https://raw.githubusercontent.com/datameet/maps/master/website/docs/data/geojson/states.geojson"
+    # Official DataMeet composite boundary including full J&K, Ladakh, and PoK
+    url = "https://raw.githubusercontent.com/datameet/maps/master/Country/india-composite.geojson"
     headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
     try:
-        response = requests.get(url.strip(), headers=headers, timeout=15)
+        # Increased timeout to 25 seconds for the high-resolution map
+        response = requests.get(url.strip(), headers=headers, timeout=25)
         response.raise_for_status()
         return gpd.read_file(io.StringIO(response.text))
-    except Exception:
+    except Exception as e:
+        print(f"Boundary Load Failed: {e}")
         return gpd.GeoDataFrame(columns=['geometry'], geometry='geometry')
 
 def inject_supplementary_sensor_grid(df_live, geo_india):
