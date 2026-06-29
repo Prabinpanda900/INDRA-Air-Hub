@@ -1,0 +1,774 @@
+station,value,pollutant,timestamp,state,city,latitude,longitude,aqi
+"Samanpura, Patna - BSPCB",69.0,PM10,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,69.0
+"Samanpura, Patna - BSPCB",23.0,CO,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,23.0
+"Muradpur, Patna - BSPCB",71.0,PM2.5,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,71.0
+"Muradpur, Patna - BSPCB",11.0,SO2,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,11.0
+"Muradpur, Patna - BSPCB",44.0,CO,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,44.0
+"Govt. High School Shikarpur, Patna - BSPCB",59.0,PM10,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,59.0
+"IGSC Planetarium Complex, Patna - BSPCB",59.0,OZONE,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,59.0
+"Pusa, Delhi - IITM",79.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,79.0
+"JNU, Delhi - DPCC",1.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,1.0
+"Alipur, Delhi - DPCC",10.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,10.0
+"Narela, Delhi - DPCC",45.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,45.0
+"Narela, Delhi - DPCC",10.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,10.0
+"Talkatora Garden, Delhi - DPCC",2.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,2.0
+"Talkatora Garden, Delhi - DPCC",12.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,12.0
+"Commonwealth Sports Complex, Delhi - DPCC",20.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,20.0
+"Chandni Chowk, Delhi - IITM",25.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,25.0
+"Sirifort, Delhi - CPCB",9.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,9.0
+"Sirifort, Delhi - CPCB",8.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,8.0
+"DTU, Delhi - CPCB",35.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,35.0
+"Dr. Karni Singh Shooting Range, Delhi - DPCC",9.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,9.0
+"Dr. Karni Singh Shooting Range, Delhi - DPCC",4.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,4.0
+"Ashok Vihar, Delhi - DPCC",11.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,11.0
+"Ashok Vihar, Delhi - DPCC",35.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,35.0
+"R K Puram, Delhi - DPCC",5.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,5.0
+"Dwarka-Sector 8, Delhi - DPCC ",6.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,6.0
+"IGI Airport (T3), Delhi - IITM",92.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,92.0
+"Burari Crossing, Delhi - IITM",38.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,38.0
+"Pusa, Delhi - DPCC",55.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,55.0
+"Patparganj, Delhi - DPCC",103.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,103.0
+"Jawaharlal Nehru Stadium, Delhi - DPCC",16.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,16.0
+"Jawaharlal Nehru Stadium, Delhi - DPCC",62.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,62.0
+"Mandir Marg, Delhi - DPCC",88.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,88.0
+"NSIT Dwarka, Delhi - CPCB",19.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,19.0
+"NSIT Dwarka, Delhi - CPCB",11.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,11.0
+"Okhla Phase-2, Delhi - DPCC",105.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,105.0
+"Okhla Phase-2, Delhi - DPCC",1.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,1.0
+"Okhla Phase-2, Delhi - DPCC",4.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,4.0
+"Okhla Phase-2, Delhi - DPCC",34.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,34.0
+"Rohini, Delhi - DPCC",40.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,40.0
+"Vivek Vihar, Delhi - DPCC",38.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,38.0
+"IIT Delhi, Delhi - IITM",141.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,141.0
+"IIT Delhi, Delhi - IITM",27.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,27.0
+"IIT Delhi, Delhi - IITM",21.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,21.0
+"CRRI Mathura Road, Delhi - IITM",47.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,47.0
+"IMD Lodhi Road, Delhi - IITM",50.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,50.0
+"IMD Lodhi Road, Delhi - IITM",7.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,7.0
+"Cantonment Area, Delhi - DPCC",69.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,69.0
+"Cantonment Area, Delhi - DPCC",1.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,1.0
+"NSUT Jaffarpur, Delhi - DPCC",48.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,48.0
+"NSUT Jaffarpur, Delhi - DPCC",0.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,0.0
+"Bawana, Delhi - DPCC",33.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,33.0
+"Bawana, Delhi - DPCC",39.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,39.0
+"Narela, Delhi - DPCC",10.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,10.0
+"Talkatora Garden, Delhi - DPCC",2.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,2.0
+"Talkatora Garden, Delhi - DPCC",12.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,12.0
+"Commonwealth Sports Complex, Delhi - DPCC",20.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,20.0
+"Cantonment Area, Delhi - DPCC",69.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,69.0
+"Cantonment Area, Delhi - DPCC",1.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,1.0
+"NSUT Jaffarpur, Delhi - DPCC",48.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,48.0
+"Ashok Vihar, Delhi - DPCC",11.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,11.0
+"Ashok Vihar, Delhi - DPCC",35.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,35.0
+"R K Puram, Delhi - DPCC",5.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,5.0
+"Dwarka-Sector 8, Delhi - DPCC ",6.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,6.0
+"IGI Airport (T3), Delhi - IITM",92.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,92.0
+"Burari Crossing, Delhi - IITM",38.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,38.0
+"IIT Delhi, Delhi - IITM",141.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,141.0
+"IIT Delhi, Delhi - IITM",27.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,27.0
+"IIT Delhi, Delhi - IITM",21.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,21.0
+"City Railway Station, Bengaluru - KSPCB",9.0,SO2,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,9.0
+"Jigani, Bengaluru - KSPCB",33.0,PM2.5,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,33.0
+"Jigani, Bengaluru - KSPCB",3.0,NH3,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,3.0
+"Jigani, Bengaluru - KSPCB",21.0,SO2,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,21.0
+"BTM Layout, Bengaluru - CPCB",19.0,SO2,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,19.0
+"Silk Board, Bengaluru - KSPCB",3.0,NH3,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,3.0
+"Jayanagar 5th Block, Bengaluru - KSPCB",12.0,SO2,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,12.0
+"Jayanagar 5th Block, Bengaluru - KSPCB",2.0,CO,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,2.0
+"Malad West, Mumbai - IITM",2.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,2.0
+"Mazgaon, Mumbai - IITM",32.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,32.0
+"Powai, Mumbai - MPCB",19.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,19.0
+"Chakala-Andheri East, Mumbai - IITM",7.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,7.0
+"Chakala-Andheri East, Mumbai - IITM",14.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,14.0
+"Chakala-Andheri East, Mumbai - IITM",7.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,7.0
+"Chakala-Andheri East, Mumbai - IITM",12.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,12.0
+"Kandivali West, Mumbai - BMC",0.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,0.0
+"Kandivali West, Mumbai - BMC",1.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,1.0
+"Kandivali West, Mumbai - BMC",1.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,1.0
+"Bandra Kurla Complex, Mumbai - MPCB",14.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,14.0
+"Bandra Kurla Complex, Mumbai - MPCB",25.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,25.0
+"Navy Nagar-Colaba, Mumbai - IITM",13.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,13.0
+"Navy Nagar-Colaba, Mumbai - IITM",8.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,8.0
+"Mulund West, Mumbai - MPCB",4.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,4.0
+"Khindipada-Bhandup West, Mumbai - IITM",11.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,11.0
+"Byculla, Mumbai - BMC",5.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,5.0
+"Borivali East, Mumbai - IITM",14.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,14.0
+"Deonar, Mumbai - IITM",7.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,7.0
+"Chhatrapati Shivaji Intl. Airport (T2), Mumbai - MPCB",0.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,0.0
+"Sion, Mumbai - MPCB",6.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,6.0
+"Siddharth Nagar-Worli, Mumbai - IITM",3.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,3.0
+"Malad West, Mumbai - IITM",2.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,2.0
+"RIICO Sitapura, Jaipur - RSPCB",18.0,OZONE,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,18.0
+"Mansarovar Sector-12, Jaipur - RSPCB",0.0,SO2,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,0.0
+"Shastri Nagar, Jaipur - RSPCB",56.0,PM2.5,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,56.0
+"Shastri Nagar, Jaipur - RSPCB",27.0,NO2,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,27.0
+"Sector-2 Murlipura, Jaipur - RSPCB",28.0,PM2.5,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,28.0
+"Sector-2 Murlipura, Jaipur - RSPCB",1.0,NH3,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,1.0
+"Police Commissionerate, Jaipur - RSPCB",12.0,NO2,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,12.0
+"RIICO Sitapura, Jaipur - RSPCB",38.0,PM10,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,38.0
+"Kodungaiyur, Chennai - TNPCB",11.0,NO2,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,11.0
+"Kodungaiyur, Chennai - TNPCB",27.0,CO,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,27.0
+"Kodungaiyur, Chennai - TNPCB",25.0,OZONE,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,25.0
+"Velachery Res. Area, Chennai - CPCB",2.0,NH3,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,2.0
+"Velachery Res. Area, Chennai - CPCB",5.0,SO2,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,5.0
+"Perungudi, Chennai - TNPCB",2.0,NO2,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,2.0
+"Ramachandrapuram, Hyderabad - TSPCB",14.0,NO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,14.0
+"Ramachandrapuram, Hyderabad - TSPCB",6.0,SO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,6.0
+"Ramachandrapuram, Hyderabad - TSPCB",20.0,OZONE,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,20.0
+"Kompally Municipal Office, Hyderabad - TSPCB",34.0,PM2.5,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,34.0
+"Central University, Hyderabad - TSPCB",3.0,NO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,3.0
+"Central University, Hyderabad - TSPCB",1.0,SO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,1.0
+"IDA Pashamylaram, Hyderabad - TSPCB",1.0,SO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,1.0
+"Zoo Park, Hyderabad - TSPCB",2.0,NH3,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,2.0
+"ECIL Kapra, Hyderabad - TSPCB",17.0,OZONE,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,17.0
+"IITH Kandi, Hyderabad - TSPCB",10.0,NO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,10.0
+"Somajiguda, Hyderabad - TSPCB",58.0,PM10,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,58.0
+"Somajiguda, Hyderabad - TSPCB",3.0,NH3,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,3.0
+"Somajiguda, Hyderabad - TSPCB",32.0,CO,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,32.0
+"ICRISAT Patancheru, Hyderabad - TSPCB",7.0,PM2.5,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,7.0
+"ICRISAT Patancheru, Hyderabad - TSPCB",9.0,PM10,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,9.0
+"Kokapet, Hyderabad - TSPCB",43.0,PM2.5,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,43.0
+"Kokapet, Hyderabad - TSPCB",20.0,CO,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,20.0
+"Kendriya Vidyalaya, Lucknow - CPCB",33.0,OZONE,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,33.0
+"Perungudi, Chennai - TNPCB",2.0,NO2,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,2.0
+"Manali Village, Chennai - TNPCB",12.0,SO2,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,12.0
+"Manali Village, Chennai - TNPCB",18.0,OZONE,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,18.0
+"Royapuram, Chennai - TNPCB",49.0,CO,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,49.0
+"Jadavpur, Kolkata - WBPCB",14.0,NO2,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,14.0
+"Fort William, Kolkata - WBPCB",11.0,PM2.5,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,11.0
+"Fort William, Kolkata - WBPCB",16.0,NO2,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,16.0
+"Fort William, Kolkata - WBPCB",9.0,NH3,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,9.0
+"Rabindra Bharati University, Kolkata - WBPCB",4.0,SO2,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,4.0
+"Ballygunge, Kolkata - WBPCB",25.0,PM10,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,25.0
+"Rabindra Sarobar, Kolkata - WBPCB",11.0,NO2,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,11.0
+"Bidhannagar, Kolkata - WBPCB",5.0,NH3,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,5.0
+"Muradpur, Patna - BSPCB",3.0,NO2,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,3.0
+"Muradpur, Patna - BSPCB",4.0,OZONE,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,4.0
+"DRM Office Danapur, Patna - BSPCB",9.0,NH3,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,9.0
+"DRM Office Danapur, Patna - BSPCB",34.0,CO,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,34.0
+"Rajbansi Nagar, Patna - BSPCB",2.0,SO2,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,2.0
+"Rajbansi Nagar, Patna - BSPCB",27.0,OZONE,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,27.0
+"Govt. High School Shikarpur, Patna - BSPCB",26.0,OZONE,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,26.0
+"IGSC Planetarium Complex, Patna - BSPCB",25.0,CO,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,25.0
+"Sirifort, Delhi - CPCB",10.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,10.0
+"DTU, Delhi - CPCB",58.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,58.0
+"DTU, Delhi - CPCB",23.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,23.0
+"DTU, Delhi - CPCB",27.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,27.0
+"Dr. Karni Singh Shooting Range, Delhi - DPCC",99.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,99.0
+"Anand Vihar, Delhi - DPCC",112.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,112.0
+"Anand Vihar, Delhi - DPCC",7.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,7.0
+"Anand Vihar, Delhi - DPCC",2.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,2.0
+"R K Puram, Delhi - DPCC",12.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,12.0
+"R K Puram, Delhi - DPCC",5.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,5.0
+"Dwarka-Sector 8, Delhi - DPCC ",30.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,30.0
+"ITO, Delhi - CPCB",26.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,26.0
+"ITO, Delhi - CPCB",2.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,2.0
+"IGI Airport (T3), Delhi - IITM",15.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,15.0
+"Burari Crossing, Delhi - IITM",85.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,85.0
+"Jahangirpuri, Delhi - DPCC",45.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,45.0
+"IHBAS, Dilshad Garden, Delhi - CPCB",99.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,99.0
+"IHBAS, Dilshad Garden, Delhi - CPCB",13.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,13.0
+"Najafgarh, Delhi - DPCC",18.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,18.0
+"Najafgarh, Delhi - DPCC",30.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,30.0
+"Najafgarh, Delhi - DPCC",7.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,7.0
+"Wazirpur, Delhi - DPCC",38.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,38.0
+"Wazirpur, Delhi - DPCC",5.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,5.0
+"Shadipur, Delhi - CPCB",86.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,86.0
+"Mundka, Delhi - DPCC",33.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,33.0
+"Mundka, Delhi - DPCC",6.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,6.0
+"Punjabi Bagh, Delhi - DPCC",32.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,32.0
+"Punjabi Bagh, Delhi - DPCC",14.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,14.0
+"Punjabi Bagh, Delhi - DPCC",21.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,21.0
+"Chandni Chowk, Delhi - IITM",60.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,60.0
+"Patparganj, Delhi - DPCC",2.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,2.0
+"Patparganj, Delhi - DPCC",3.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,3.0
+"Jawaharlal Nehru Stadium, Delhi - DPCC",45.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,45.0
+"Jawaharlal Nehru Stadium, Delhi - DPCC",107.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,107.0
+"Mandir Marg, Delhi - DPCC",5.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,5.0
+"Mandir Marg, Delhi - DPCC",8.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,8.0
+"NSIT Dwarka, Delhi - CPCB",50.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,50.0
+"Okhla Phase-2, Delhi - DPCC",4.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,4.0
+"Rohini, Delhi - DPCC",8.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,8.0
+"Rohini, Delhi - DPCC",4.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,4.0
+"Vivek Vihar, Delhi - DPCC",22.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,22.0
+"Vivek Vihar, Delhi - DPCC",9.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,9.0
+"Vivek Vihar, Delhi - DPCC",28.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,28.0
+"Pusa, Delhi - IITM",30.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,30.0
+"Pusa, Delhi - IITM",13.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,13.0
+"IGNOU_Maidan Garhi, Delhi - DPCC",11.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,11.0
+"IGNOU_Maidan Garhi, Delhi - DPCC",3.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,3.0
+"JNU, Delhi - DPCC",93.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,93.0
+"JNU, Delhi - DPCC",28.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,28.0
+"JNU, Delhi - DPCC",6.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,6.0
+"Alipur, Delhi - DPCC",45.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,45.0
+"Alipur, Delhi - DPCC",7.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,7.0
+"Alipur, Delhi - DPCC",3.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,3.0
+"Narela, Delhi - DPCC",83.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,83.0
+"Narela, Delhi - DPCC",2.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,2.0
+"Talkatora Garden, Delhi - DPCC",58.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,58.0
+"Aya Nagar, Delhi - IITM",19.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,19.0
+"Aya Nagar, Delhi - IITM",69.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,69.0
+"Aya Nagar, Delhi - IITM",18.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,18.0
+"CRRI Mathura Road, Delhi - IITM",17.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,17.0
+"IMD Lodhi Road, Delhi - IITM",27.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,27.0
+"IMD Lodhi Road, Delhi - IITM",4.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,4.0
+"Major Dhyan Chand National Stadium, Delhi - DPCC",14.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,14.0
+"Major Dhyan Chand National Stadium, Delhi - DPCC",2.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,2.0
+"Sonia Vihar, Delhi - DPCC",38.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,38.0
+"Sonia Vihar, Delhi - DPCC",12.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,12.0
+"Sonia Vihar, Delhi - DPCC",3.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,3.0
+"Pusa, Delhi - DPCC",33.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,33.0
+"Kasturi Nagar, Bengaluru - KSPCB",28.0,OZONE,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,28.0
+"Jigani, Bengaluru - KSPCB",19.0,NO2,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,19.0
+"BTM Layout, Bengaluru - CPCB",24.0,NO2,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,24.0
+"Silk Board, Bengaluru - KSPCB",19.0,OZONE,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,19.0
+"Jayanagar 5th Block, Bengaluru - KSPCB",12.0,PM2.5,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,12.0
+"Jayanagar 5th Block, Bengaluru - KSPCB",4.0,NO2,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,4.0
+"Hombegowda Nagar, Bengaluru - KSPCB",13.0,NO2,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,13.0
+"Bapuji Nagar, Bengaluru - KSPCB",7.0,PM2.5,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,7.0
+"Bapuji Nagar, Bengaluru - KSPCB",10.0,OZONE,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,10.0
+"Bapuji Nagar, Bengaluru - KSPCB",7.0,PM2.5,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,7.0
+"Malad West, Mumbai - IITM",7.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,7.0
+"Sewri, Mumbai - BMC",22.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,22.0
+"Kandivali West, Mumbai - BMC",54.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,54.0
+"Kandivali West, Mumbai - BMC",7.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,7.0
+"Kurla, Mumbai - MPCB",28.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,28.0
+"Worli, Mumbai - MPCB",38.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,38.0
+"Khindipada-Bhandup West, Mumbai - IITM",3.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,3.0
+"Khindipada-Bhandup West, Mumbai - IITM",5.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,5.0
+"Chembur, Mumbai - MPCB",4.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,4.0
+"Chembur, Mumbai - MPCB",1.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,1.0
+"Kherwadi_Bandra East, Mumbai - MPCB",20.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,20.0
+"Byculla, Mumbai - BMC",22.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,22.0
+"Bandra Kurla Complex, Mumbai - IITM",8.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,8.0
+"Siddharth Nagar-Worli, Mumbai - IITM",39.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,39.0
+"Siddharth Nagar-Worli, Mumbai - IITM",17.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,17.0
+"Malad West, Mumbai - IITM",16.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,16.0
+"Malad West, Mumbai - IITM",1.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,1.0
+"Kodungaiyur, Chennai - TNPCB",3.0,NH3,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,3.0
+"Velachery Res. Area, Chennai - CPCB",43.0,PM2.5,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,43.0
+"Velachery Res. Area, Chennai - CPCB",9.0,OZONE,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,9.0
+"Perungudi, Chennai - TNPCB",16.0,PM2.5,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,16.0
+"Perungudi, Chennai - TNPCB",28.0,CO,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,28.0
+"Shastri Nagar, Jaipur - RSPCB",8.0,SO2,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,8.0
+"Sector-2 Murlipura, Jaipur - RSPCB",1.0,SO2,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,1.0
+"Sector-2 Murlipura, Jaipur - RSPCB",9.0,CO,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,9.0
+"Police Commissionerate, Jaipur - RSPCB",50.0,PM10,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,50.0
+"Adarsh Nagar, Jaipur - RSPCB",53.0,PM10,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,53.0
+"Adarsh Nagar, Jaipur - RSPCB",5.0,NH3,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,5.0
+"Talkatora District Industries Center, Lucknow - CPCB",11.0,OZONE,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,11.0
+"Gomti Nagar, Lucknow - UPPCB",9.0,NO2,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,9.0
+"B R Ambedkar University, Lucknow - UPPCB",4.0,PM10,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,4.0
+"B R Ambedkar University, Lucknow - UPPCB",3.0,NH3,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,3.0
+"B R Ambedkar University, Lucknow - UPPCB",33.0,SO2,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,33.0
+"B R Ambedkar University, Lucknow - UPPCB",36.0,OZONE,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,36.0
+"Lalbagh, Lucknow - CPCB",13.0,CO,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,13.0
+"Kendriya Vidyalaya, Lucknow - CPCB",61.0,PM10,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,61.0
+"Kendriya Vidyalaya, Lucknow - CPCB",22.0,NO2,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,22.0
+"Kendriya Vidyalaya, Lucknow - CPCB",7.0,NH3,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,7.0
+"New Malakpet, Hyderabad - TSPCB",22.0,PM2.5,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,22.0
+"New Malakpet, Hyderabad - TSPCB",22.0,CO,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,22.0
+"Kompally Municipal Office, Hyderabad - TSPCB",10.0,NO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,10.0
+"Kompally Municipal Office, Hyderabad - TSPCB",3.0,SO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,3.0
+"Kompally Municipal Office, Hyderabad - TSPCB",8.0,OZONE,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,8.0
+"Central University, Hyderabad - TSPCB",4.0,PM10,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,4.0
+"IDA Pashamylaram, Hyderabad - TSPCB",9.0,CO,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,9.0
+"IDA Pashamylaram, Hyderabad - TSPCB",29.0,OZONE,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,29.0
+"Zoo Park, Hyderabad - TSPCB",9.0,PM10,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,9.0
+"ECIL Kapra, Hyderabad - TSPCB",71.0,PM10,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,71.0
+"ECIL Kapra, Hyderabad - TSPCB",2.0,NH3,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,2.0
+"Nacharam_TSIIC IALA, Hyderabad - TSPCB",30.0,PM2.5,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,30.0
+"Royapuram, Chennai - TNPCB",5.0,SO2,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,5.0
+"Nacharam_TSIIC IALA, Hyderabad - TSPCB",10.0,NO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,10.0
+"IITH Kandi, Hyderabad - TSPCB",58.0,PM10,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,58.0
+"IITH Kandi, Hyderabad - TSPCB",4.0,NH3,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,4.0
+"IITH Kandi, Hyderabad - TSPCB",10.0,SO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,10.0
+"Kokapet, Hyderabad - TSPCB",1.0,NH3,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,1.0
+"Jadavpur, Kolkata - WBPCB",36.0,PM2.5,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,36.0
+"Jadavpur, Kolkata - WBPCB",37.0,PM10,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,37.0
+"Jadavpur, Kolkata - WBPCB",12.0,NH3,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,12.0
+"Rabindra Bharati University, Kolkata - WBPCB",25.0,PM10,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,25.0
+"Ballygunge, Kolkata - WBPCB",9.0,NH3,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,9.0
+"Ballygunge, Kolkata - WBPCB",7.0,SO2,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,7.0
+"Rabindra Sarobar, Kolkata - WBPCB",11.0,CO,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,11.0
+"Bidhannagar, Kolkata - WBPCB",37.0,PM10,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,37.0
+"DRM Office Danapur, Patna - BSPCB",46.0,PM2.5,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,46.0
+"DRM Office Danapur, Patna - BSPCB",51.0,PM10,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,51.0
+"DRM Office Danapur, Patna - BSPCB",4.0,SO2,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,4.0
+"DRM Office Danapur, Patna - BSPCB",28.0,OZONE,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,28.0
+"Govt. High School Shikarpur, Patna - BSPCB",6.0,NH3,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,6.0
+"Govt. High School Shikarpur, Patna - BSPCB",8.0,SO2,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,8.0
+"IGSC Planetarium Complex, Patna - BSPCB",1.0,NO2,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,1.0
+"Samanpura, Patna - BSPCB",45.0,PM2.5,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,45.0
+"Samanpura, Patna - BSPCB",5.0,SO2,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,5.0
+"Shadipur, Delhi - CPCB",6.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,6.0
+"Mundka, Delhi - DPCC",55.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,55.0
+"Mundka, Delhi - DPCC",118.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,118.0
+"Punjabi Bagh, Delhi - DPCC",78.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,78.0
+"Punjabi Bagh, Delhi - DPCC",3.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,3.0
+"Punjabi Bagh, Delhi - DPCC",33.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,33.0
+"Chandni Chowk, Delhi - IITM",7.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,7.0
+"Chandni Chowk, Delhi - IITM",106.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,106.0
+"Sirifort, Delhi - CPCB",64.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,64.0
+"Sirifort, Delhi - CPCB",13.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,13.0
+"DTU, Delhi - CPCB",11.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,11.0
+"DTU, Delhi - CPCB",4.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,4.0
+"Dr. Karni Singh Shooting Range, Delhi - DPCC",20.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,20.0
+"Dr. Karni Singh Shooting Range, Delhi - DPCC",21.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,21.0
+"Anand Vihar, Delhi - DPCC",23.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,23.0
+"Anand Vihar, Delhi - DPCC",6.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,6.0
+"Ashok Vihar, Delhi - DPCC",25.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,25.0
+"Ashok Vihar, Delhi - DPCC",97.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,97.0
+"Ashok Vihar, Delhi - DPCC",7.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,7.0
+"R K Puram, Delhi - DPCC",22.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,22.0
+"Dwarka-Sector 8, Delhi - DPCC ",23.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,23.0
+"NSIT Dwarka, Delhi - CPCB",29.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,29.0
+"NSIT Dwarka, Delhi - CPCB",17.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,17.0
+"Okhla Phase-2, Delhi - DPCC",33.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,33.0
+"Rohini, Delhi - DPCC",74.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,74.0
+"Rohini, Delhi - DPCC",6.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,6.0
+"Rohini, Delhi - DPCC",5.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,5.0
+"Vivek Vihar, Delhi - DPCC",6.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,6.0
+"Jahangirpuri, Delhi - DPCC",60.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,60.0
+"Jahangirpuri, Delhi - DPCC",12.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,12.0
+"IHBAS, Dilshad Garden, Delhi - CPCB",94.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,94.0
+"IHBAS, Dilshad Garden, Delhi - CPCB",1.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,1.0
+"Sri Aurobindo Marg, Delhi - DPCC",50.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,50.0
+"Sri Aurobindo Marg, Delhi - DPCC",99.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,99.0
+"Sri Aurobindo Marg, Delhi - DPCC",13.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,13.0
+"Wazirpur, Delhi - DPCC",56.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,56.0
+"Shadipur, Delhi - CPCB",66.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,66.0
+"IMD Lodhi Road, Delhi - IITM",106.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,106.0
+"Dwarka-Sector 8, Delhi - DPCC ",14.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,14.0
+"Dwarka-Sector 8, Delhi - DPCC ",20.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,20.0
+"IGI Airport (T3), Delhi - IITM",52.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,52.0
+"Burari Crossing, Delhi - IITM",10.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,10.0
+"Burari Crossing, Delhi - IITM",2.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,2.0
+"IIT Delhi, Delhi - IITM",33.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,33.0
+"IIT Delhi, Delhi - IITM",8.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,8.0
+"North Campus, DU, Delhi - IITM",5.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,5.0
+"North Campus, DU, Delhi - IITM",52.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,52.0
+"CRRI Mathura Road, Delhi - IITM",44.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,44.0
+"CRRI Mathura Road, Delhi - IITM",59.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,59.0
+"CRRI Mathura Road, Delhi - IITM",11.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,11.0
+"Major Dhyan Chand National Stadium, Delhi - DPCC",18.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,18.0
+"Sonia Vihar, Delhi - DPCC",25.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,25.0
+"Nehru Nagar, Delhi - DPCC",6.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,6.0
+"Nehru Nagar, Delhi - DPCC",15.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,15.0
+"Pusa, Delhi - DPCC",1.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,1.0
+"Patparganj, Delhi - DPCC",37.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,37.0
+"Patparganj, Delhi - DPCC",7.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,7.0
+"Jawaharlal Nehru Stadium, Delhi - DPCC",12.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,12.0
+"Mandir Marg, Delhi - DPCC",5.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,5.0
+"Mandir Marg, Delhi - DPCC",11.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,11.0
+"Mandir Marg, Delhi - DPCC",42.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,42.0
+"Narela, Delhi - DPCC",8.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,8.0
+"Talkatora Garden, Delhi - DPCC",3.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,3.0
+"Commonwealth Sports Complex, Delhi - DPCC",101.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,101.0
+"Commonwealth Sports Complex, Delhi - DPCC",1.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,1.0
+"Commonwealth Sports Complex, Delhi - DPCC",4.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,4.0
+"Commonwealth Sports Complex, Delhi - DPCC",3.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,3.0
+"Cantonment Area, Delhi - DPCC",5.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,5.0
+"Cantonment Area, Delhi - DPCC",32.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,32.0
+"Cantonment Area, Delhi - DPCC",32.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,32.0
+"NSUT Jaffarpur, Delhi - DPCC",6.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,6.0
+"NSUT Jaffarpur, Delhi - DPCC",39.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,39.0
+"NSUT Jaffarpur, Delhi - DPCC",17.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,17.0
+"Pusa, Delhi - IITM",12.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,12.0
+"IGNOU_Maidan Garhi, Delhi - DPCC",6.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,6.0
+"IGNOU_Maidan Garhi, Delhi - DPCC",23.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,23.0
+"IGNOU_Maidan Garhi, Delhi - DPCC",9.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,9.0
+"JNU, Delhi - DPCC",20.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,20.0
+"Alipur, Delhi - DPCC",24.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,24.0
+"Kasturi Nagar, Bengaluru - KSPCB",28.0,CO,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,28.0
+"City Railway Station, Bengaluru - KSPCB",56.0,CO,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,56.0
+"Jigani, Bengaluru - KSPCB",36.0,PM10,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,36.0
+"Jigani, Bengaluru - KSPCB",34.0,CO,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,34.0
+"BTM Layout, Bengaluru - CPCB",26.0,PM2.5,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,26.0
+"Silk Board, Bengaluru - KSPCB",33.0,PM10,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,33.0
+"Silk Board, Bengaluru - KSPCB",6.0,NO2,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,6.0
+"Jayanagar 5th Block, Bengaluru - KSPCB",44.0,OZONE,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,44.0
+"Hombegowda Nagar, Bengaluru - KSPCB",1.0,NH3,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,1.0
+"Bapuji Nagar, Bengaluru - KSPCB",23.0,NO2,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,23.0
+"Bapuji Nagar, Bengaluru - KSPCB",15.0,SO2,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,15.0
+"Kandivali West, Mumbai - BMC",21.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,21.0
+"Kurla, Mumbai - MPCB",2.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,2.0
+"Worli, Mumbai - MPCB",3.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,3.0
+"Bandra Kurla Complex, Mumbai - MPCB",10.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,10.0
+"Bandra Kurla Complex, Mumbai - MPCB",0.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,0.0
+"Bandra Kurla Complex, Mumbai - MPCB",8.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,8.0
+"Bandra Kurla Complex, Mumbai - MPCB",3.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,3.0
+"Navy Nagar-Colaba, Mumbai - IITM",42.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,42.0
+"Khindipada-Bhandup West, Mumbai - IITM",3.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,3.0
+"Khindipada-Bhandup West, Mumbai - IITM",2.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,2.0
+"Khindipada-Bhandup West, Mumbai - IITM",18.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,18.0
+"Chembur, Mumbai - MPCB",11.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,11.0
+"Chembur, Mumbai - MPCB",1.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,1.0
+"Byculla, Mumbai - BMC",17.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,17.0
+"Borivali East, Mumbai - IITM",3.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,3.0
+"Borivali East, Mumbai - IITM",28.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,28.0
+"Borivali East, Mumbai - IITM",37.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,37.0
+"Mindspace-Malad West, Mumbai - MPCB",50.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,50.0
+"Mindspace-Malad West, Mumbai - MPCB",9.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,9.0
+"Mindspace-Malad West, Mumbai - MPCB",3.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,3.0
+"Mindspace-Malad West, Mumbai - MPCB",10.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,10.0
+"Bandra Kurla Complex, Mumbai - IITM",25.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,25.0
+"Bandra Kurla Complex, Mumbai - IITM",2.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,2.0
+"Bandra Kurla Complex, Mumbai - IITM",2.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,2.0
+"Bandra Kurla Complex, Mumbai - IITM",0.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,0.0
+"Deonar, Mumbai - IITM",56.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,56.0
+"Sion, Mumbai - MPCB",36.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,36.0
+"Malad West, Mumbai - IITM",7.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,7.0
+"Ghatkopar, Mumbai - BMC",7.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,7.0
+"Sector-2 Murlipura, Jaipur - RSPCB",61.0,PM10,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,61.0
+"Police Commissionerate, Jaipur - RSPCB",5.0,NH3,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,5.0
+"Adarsh Nagar, Jaipur - RSPCB",44.0,OZONE,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,44.0
+"RIICO Sitapura, Jaipur - RSPCB",8.0,NO2,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,8.0
+"RIICO Sitapura, Jaipur - RSPCB",2.0,NH3,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,2.0
+"Mansarovar Sector-12, Jaipur - RSPCB",7.0,NO2,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,7.0
+"Perungudi, Chennai - TNPCB",1.0,SO2,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,1.0
+"Arumbakkam, Chennai - TNPCB",16.0,PM2.5,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,16.0
+"Arumbakkam, Chennai - TNPCB",10.0,NO2,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,10.0
+"Arumbakkam, Chennai - TNPCB",3.0,NH3,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,3.0
+"Manali Village, Chennai - TNPCB",24.0,PM10,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,24.0
+"Manali Village, Chennai - TNPCB",0.0,NO2,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,0.0
+"Manali, Chennai - CPCB",11.0,CO,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,11.0
+"Manali, Chennai - CPCB",7.0,OZONE,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,7.0
+"Royapuram, Chennai - TNPCB",36.0,PM2.5,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,36.0
+"Royapuram, Chennai - TNPCB",12.0,NO2,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,12.0
+"Royapuram, Chennai - TNPCB",3.0,NH3,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,3.0
+"Talkatora District Industries Center, Lucknow - CPCB",29.0,NO2,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,29.0
+"Talkatora District Industries Center, Lucknow - CPCB",42.0,CO,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,42.0
+"Gomti Nagar, Lucknow - UPPCB",41.0,CO,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,41.0
+"Kukrail Picnic Spot-1, Lucknow - UPPCB",28.0,PM2.5,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,28.0
+"Lalbagh, Lucknow - CPCB",7.0,NH3,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,7.0
+"New Malakpet, Hyderabad - TSPCB",46.0,PM10,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,46.0
+"New Malakpet, Hyderabad - TSPCB",8.0,SO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,8.0
+"Ramachandrapuram, Hyderabad - TSPCB",32.0,PM2.5,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,32.0
+"Ramachandrapuram, Hyderabad - TSPCB",56.0,PM10,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,56.0
+"Ramachandrapuram, Hyderabad - TSPCB",4.0,NH3,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,4.0
+"Central University, Hyderabad - TSPCB",0.0,NH3,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,0.0
+"Central University, Hyderabad - TSPCB",5.0,CO,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,5.0
+"Central University, Hyderabad - TSPCB",8.0,OZONE,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,8.0
+"IDA Pashamylaram, Hyderabad - TSPCB",16.0,PM2.5,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,16.0
+"ECIL Kapra, Hyderabad - TSPCB",32.0,PM2.5,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,32.0
+"Kodungaiyur, Chennai - TNPCB",5.0,SO2,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,5.0
+"Velachery Res. Area, Chennai - CPCB",11.0,NO2,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,11.0
+"Perungudi, Chennai - TNPCB",18.0,PM10,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,18.0
+"Lalbagh, Lucknow - CPCB",8.0,OZONE,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,8.0
+"IITH Kandi, Hyderabad - TSPCB",28.0,OZONE,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,28.0
+"Somajiguda, Hyderabad - TSPCB",45.0,PM2.5,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,45.0
+"Somajiguda, Hyderabad - TSPCB",14.0,NO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,14.0
+"ICRISAT Patancheru, Hyderabad - TSPCB",2.0,SO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,2.0
+"ICRISAT Patancheru, Hyderabad - TSPCB",5.0,OZONE,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,5.0
+"Kokapet, Hyderabad - TSPCB",11.0,NO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,11.0
+"Kokapet, Hyderabad - TSPCB",14.0,OZONE,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,14.0
+"Jadavpur, Kolkata - WBPCB",11.0,OZONE,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,11.0
+"Fort William, Kolkata - WBPCB",12.0,PM10,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,12.0
+"Fort William, Kolkata - WBPCB",5.0,SO2,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,5.0
+"Fort William, Kolkata - WBPCB",14.0,CO,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,14.0
+"Ballygunge, Kolkata - WBPCB",18.0,PM2.5,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,18.0
+"Ballygunge, Kolkata - WBPCB",19.0,NO2,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,19.0
+"Ballygunge, Kolkata - WBPCB",13.0,OZONE,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,13.0
+"Rabindra Sarobar, Kolkata - WBPCB",10.0,OZONE,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,10.0
+"Bidhannagar, Kolkata - WBPCB",8.0,SO2,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,8.0
+"Bidhannagar, Kolkata - WBPCB",42.0,CO,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,42.0
+"DRM Office Danapur, Patna - BSPCB",30.0,NO2,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,30.0
+"Rajbansi Nagar, Patna - BSPCB",38.0,PM2.5,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,38.0
+"Rajbansi Nagar, Patna - BSPCB",28.0,NO2,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,28.0
+"Govt. High School Shikarpur, Patna - BSPCB",11.0,NO2,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,11.0
+"IGSC Planetarium Complex, Patna - BSPCB",48.0,PM2.5,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,48.0
+"IGSC Planetarium Complex, Patna - BSPCB",1.0,SO2,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,1.0
+"Samanpura, Patna - BSPCB",4.0,NH3,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,4.0
+"Pusa, Delhi - IITM",3.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,3.0
+"IGNOU_Maidan Garhi, Delhi - DPCC",0.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,0.0
+"Pusa, Delhi - IITM",3.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,3.0
+"IGNOU_Maidan Garhi, Delhi - DPCC",0.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,0.0
+"JNU, Delhi - DPCC",6.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,6.0
+"Alipur, Delhi - DPCC",104.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,104.0
+"Okhla Phase-2, Delhi - DPCC",8.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,8.0
+"Rohini, Delhi - DPCC",37.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,37.0
+"Vivek Vihar, Delhi - DPCC",112.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,112.0
+"Jahangirpuri, Delhi - DPCC",80.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,80.0
+"Jahangirpuri, Delhi - DPCC",2.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,2.0
+"IHBAS, Dilshad Garden, Delhi - CPCB",16.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,16.0
+"Sri Aurobindo Marg, Delhi - DPCC",16.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,16.0
+"Sri Aurobindo Marg, Delhi - DPCC",7.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,7.0
+"Sri Aurobindo Marg, Delhi - DPCC",5.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,5.0
+"Sri Aurobindo Marg, Delhi - DPCC",28.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,28.0
+"Najafgarh, Delhi - DPCC",28.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,28.0
+"Najafgarh, Delhi - DPCC",16.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,16.0
+"Wazirpur, Delhi - DPCC",23.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,23.0
+"Wazirpur, Delhi - DPCC",16.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,16.0
+"Shadipur, Delhi - CPCB",35.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,35.0
+"Mundka, Delhi - DPCC",5.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,5.0
+"Chandni Chowk, Delhi - IITM",27.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,27.0
+"Sirifort, Delhi - CPCB",104.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,104.0
+"Dr. Karni Singh Shooting Range, Delhi - DPCC",14.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,14.0
+"Anand Vihar, Delhi - DPCC",36.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,36.0
+"Anand Vihar, Delhi - DPCC",56.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,56.0
+"R K Puram, Delhi - DPCC",47.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,47.0
+"R K Puram, Delhi - DPCC",9.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,9.0
+"Dwarka-Sector 8, Delhi - DPCC ",13.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,13.0
+"IGI Airport (T3), Delhi - IITM",38.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,38.0
+"Burari Crossing, Delhi - IITM",47.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,47.0
+"Aya Nagar, Delhi - IITM",32.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,32.0
+"North Campus, DU, Delhi - IITM",35.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,35.0
+"North Campus, DU, Delhi - IITM",53.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,53.0
+"North Campus, DU, Delhi - IITM",10.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,10.0
+"Talkatora Garden, Delhi - DPCC",42.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,42.0
+"Talkatora Garden, Delhi - DPCC",28.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,28.0
+"Cantonment Area, Delhi - DPCC",10.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,10.0
+"Cantonment Area, Delhi - DPCC",0.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,0.0
+"Bawana, Delhi - DPCC",5.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,5.0
+"Bawana, Delhi - DPCC",47.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,47.0
+"Major Dhyan Chand National Stadium, Delhi - DPCC",18.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,18.0
+"Major Dhyan Chand National Stadium, Delhi - DPCC",90.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,90.0
+"Sonia Vihar, Delhi - DPCC",6.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,6.0
+"Pusa, Delhi - DPCC",5.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,5.0
+"Pusa, Delhi - DPCC",8.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,8.0
+"Jayanagar 5th Block, Bengaluru - KSPCB",13.0,PM10,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,13.0
+"Jayanagar 5th Block, Bengaluru - KSPCB",1.0,NH3,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,1.0
+"Hombegowda Nagar, Bengaluru - KSPCB",18.0,PM10,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,18.0
+"Hombegowda Nagar, Bengaluru - KSPCB",1.0,SO2,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,1.0
+"Bapuji Nagar, Bengaluru - KSPCB",4.0,NH3,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,4.0
+"Bapuji Nagar, Bengaluru - KSPCB",12.0,CO,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,12.0
+"BTM Layout, Bengaluru - CPCB",24.0,OZONE,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,24.0
+"Ghatkopar, Mumbai - BMC",16.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,16.0
+"Ghatkopar, Mumbai - BMC",0.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,0.0
+"Ghatkopar, Mumbai - BMC",22.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,22.0
+"Kurla, Mumbai - MPCB",6.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,6.0
+"Mindspace-Malad West, Mumbai - MPCB",26.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,26.0
+"Mindspace-Malad West, Mumbai - MPCB",13.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,13.0
+"Mindspace-Malad West, Mumbai - MPCB",38.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,38.0
+"Deonar, Mumbai - IITM",4.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,4.0
+"Chhatrapati Shivaji Intl. Airport (T2), Mumbai - MPCB",7.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,7.0
+"Sion, Mumbai - MPCB",17.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,17.0
+"Mazgaon, Mumbai - IITM",6.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,6.0
+"Mazgaon, Mumbai - IITM",3.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,3.0
+"Mazgaon, Mumbai - IITM",1.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,1.0
+"Mazgaon, Mumbai - IITM",29.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,29.0
+"Worli, Mumbai - MPCB",10.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,10.0
+"Worli, Mumbai - MPCB",3.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,3.0
+"Worli, Mumbai - MPCB",8.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,8.0
+"Navy Nagar-Colaba, Mumbai - IITM",4.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,4.0
+"Mulund West, Mumbai - MPCB",14.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,14.0
+"Kherwadi_Bandra East, Mumbai - MPCB",7.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,7.0
+"Byculla, Mumbai - BMC",8.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,8.0
+"Byculla, Mumbai - BMC",10.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,10.0
+"Mansarovar Sector-12, Jaipur - RSPCB",38.0,PM10,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,38.0
+"Sector-2 Murlipura, Jaipur - RSPCB",14.0,NO2,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,14.0
+"Police Commissionerate, Jaipur - RSPCB",33.0,CO,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,33.0
+"Police Commissionerate, Jaipur - RSPCB",24.0,OZONE,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,24.0
+"Adarsh Nagar, Jaipur - RSPCB",23.0,PM2.5,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,23.0
+"Adarsh Nagar, Jaipur - RSPCB",11.0,NO2,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,11.0
+"RIICO Sitapura, Jaipur - RSPCB",1.0,SO2,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,1.0
+"Mansarovar Sector-12, Jaipur - RSPCB",20.0,PM2.5,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,20.0
+"Talkatora District Industries Center, Lucknow - CPCB",51.0,PM10,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,51.0
+"Talkatora District Industries Center, Lucknow - CPCB",6.0,NH3,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,6.0
+"Talkatora District Industries Center, Lucknow - CPCB",2.0,SO2,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,2.0
+"Gomti Nagar, Lucknow - UPPCB",15.0,PM2.5,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,15.0
+"B R Ambedkar University, Lucknow - UPPCB",2.0,PM2.5,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,2.0
+"B R Ambedkar University, Lucknow - UPPCB",11.0,NO2,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,11.0
+"Kukrail Picnic Spot-1, Lucknow - UPPCB",31.0,NO2,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,31.0
+"Kukrail Picnic Spot-1, Lucknow - UPPCB",6.0,NH3,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,6.0
+"Kukrail Picnic Spot-1, Lucknow - UPPCB",12.0,CO,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,12.0
+"Kukrail Picnic Spot-1, Lucknow - UPPCB",33.0,OZONE,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,33.0
+"Lalbagh, Lucknow - CPCB",33.0,PM2.5,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,33.0
+"Lalbagh, Lucknow - CPCB",24.0,NO2,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,24.0
+"Lalbagh, Lucknow - CPCB",1.0,SO2,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,1.0
+"Kendriya Vidyalaya, Lucknow - CPCB",66.0,PM2.5,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,66.0
+"Kendriya Vidyalaya, Lucknow - CPCB",3.0,SO2,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,3.0
+"New Malakpet, Hyderabad - TSPCB",2.0,NH3,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,2.0
+"New Malakpet, Hyderabad - TSPCB",14.0,OZONE,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,14.0
+"Sanathnagar, Hyderabad - TSPCB",10.0,PM2.5,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,10.0
+"Sanathnagar, Hyderabad - TSPCB",9.0,NO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,9.0
+"Kompally Municipal Office, Hyderabad - TSPCB",71.0,PM10,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,71.0
+"Kompally Municipal Office, Hyderabad - TSPCB",28.0,CO,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,28.0
+"Central University, Hyderabad - TSPCB",3.0,PM2.5,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,3.0
+"IDA Pashamylaram, Hyderabad - TSPCB",34.0,PM10,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,34.0
+"IDA Pashamylaram, Hyderabad - TSPCB",0.0,NH3,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,0.0
+"Zoo Park, Hyderabad - TSPCB",6.0,CO,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,6.0
+"ECIL Kapra, Hyderabad - TSPCB",3.0,NO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,3.0
+"ECIL Kapra, Hyderabad - TSPCB",14.0,SO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,14.0
+"Nacharam_TSIIC IALA, Hyderabad - TSPCB",34.0,CO,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,34.0
+"Nacharam_TSIIC IALA, Hyderabad - TSPCB",16.0,OZONE,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,16.0
+"IITH Kandi, Hyderabad - TSPCB",30.0,PM2.5,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,30.0
+"IITH Kandi, Hyderabad - TSPCB",41.0,CO,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,41.0
+"ICRISAT Patancheru, Hyderabad - TSPCB",10.0,NO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,10.0
+"ICRISAT Patancheru, Hyderabad - TSPCB",1.0,NH3,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,1.0
+"Velachery Res. Area, Chennai - CPCB",37.0,PM10,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,37.0
+"Manali Village, Chennai - TNPCB",6.0,PM2.5,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,6.0
+"Manali Village, Chennai - TNPCB",2.0,NH3,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,2.0
+"Jadavpur, Kolkata - WBPCB",5.0,SO2,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,5.0
+"Fort William, Kolkata - WBPCB",7.0,OZONE,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,7.0
+"Rabindra Bharati University, Kolkata - WBPCB",23.0,NO2,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,23.0
+"Rabindra Bharati University, Kolkata - WBPCB",5.0,NH3,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,5.0
+"Rabindra Bharati University, Kolkata - WBPCB",42.0,CO,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,42.0
+"Ballygunge, Kolkata - WBPCB",12.0,CO,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,12.0
+"Rabindra Sarobar, Kolkata - WBPCB",30.0,PM10,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,30.0
+"Bidhannagar, Kolkata - WBPCB",13.0,NO2,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,13.0
+"Govt. High School Shikarpur, Patna - BSPCB",16.0,CO,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,16.0
+"Samanpura, Patna - BSPCB",15.0,NO2,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,15.0
+"Samanpura, Patna - BSPCB",16.0,OZONE,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,16.0
+"Muradpur, Patna - BSPCB",107.0,PM10,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,107.0
+"Muradpur, Patna - BSPCB",4.0,NH3,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,4.0
+"Rajbansi Nagar, Patna - BSPCB",25.0,CO,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,25.0
+"Govt. High School Shikarpur, Patna - BSPCB",50.0,PM2.5,29-06-2026 02:00:00,Bihar,Patna,25.5941,85.1376,50.0
+"Major Dhyan Chand National Stadium, Delhi - DPCC",6.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,6.0
+"DTU, Delhi - CPCB",33.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,33.0
+"Dr. Karni Singh Shooting Range, Delhi - DPCC",2.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,2.0
+"Ashok Vihar, Delhi - DPCC",11.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,11.0
+"Ashok Vihar, Delhi - DPCC",4.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,4.0
+"R K Puram, Delhi - DPCC",118.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,118.0
+"Dwarka-Sector 8, Delhi - DPCC ",81.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,81.0
+"ITO, Delhi - CPCB",40.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,40.0
+"ITO, Delhi - CPCB",70.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,70.0
+"ITO, Delhi - CPCB",17.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,17.0
+"ITO, Delhi - CPCB",58.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,58.0
+"ITO, Delhi - CPCB",17.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,17.0
+"IGI Airport (T3), Delhi - IITM",14.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,14.0
+"NSUT Jaffarpur, Delhi - DPCC",73.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,73.0
+"NSUT Jaffarpur, Delhi - DPCC",2.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,2.0
+"Bawana, Delhi - DPCC",4.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,4.0
+"Major Dhyan Chand National Stadium, Delhi - DPCC",6.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,6.0
+"Sonia Vihar, Delhi - DPCC",108.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,108.0
+"Sonia Vihar, Delhi - DPCC",28.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,28.0
+"Nehru Nagar, Delhi - DPCC",27.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,27.0
+"Nehru Nagar, Delhi - DPCC",12.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,12.0
+"Nehru Nagar, Delhi - DPCC",27.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,27.0
+"Nehru Nagar, Delhi - DPCC",10.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,10.0
+"Pusa, Delhi - DPCC",113.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,113.0
+"Patparganj, Delhi - DPCC",5.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,5.0
+"Patparganj, Delhi - DPCC",33.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,33.0
+"IHBAS, Dilshad Garden, Delhi - CPCB",23.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,23.0
+"Najafgarh, Delhi - DPCC",17.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,17.0
+"Wazirpur, Delhi - DPCC",129.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,129.0
+"Wazirpur, Delhi - DPCC",8.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,8.0
+"Shadipur, Delhi - CPCB",48.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,48.0
+"Mundka, Delhi - DPCC",1.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,1.0
+"Mundka, Delhi - DPCC",35.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,35.0
+"Punjabi Bagh, Delhi - DPCC",34.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,34.0
+"Sirifort, Delhi - CPCB",33.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,33.0
+"Aya Nagar, Delhi - IITM",32.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,32.0
+"Jawaharlal Nehru Stadium, Delhi - DPCC",16.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,16.0
+"Jawaharlal Nehru Stadium, Delhi - DPCC",3.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,3.0
+"Mandir Marg, Delhi - DPCC",19.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,19.0
+"NSIT Dwarka, Delhi - CPCB",34.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,34.0
+"NSIT Dwarka, Delhi - CPCB",3.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,3.0
+"Vivek Vihar, Delhi - DPCC",1.0,OZONE,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,1.0
+"Jahangirpuri, Delhi - DPCC",21.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,21.0
+"Jahangirpuri, Delhi - DPCC",5.0,SO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,5.0
+"IGNOU_Maidan Garhi, Delhi - DPCC",79.0,PM10,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,79.0
+"JNU, Delhi - DPCC",0.0,NH3,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,0.0
+"Narela, Delhi - DPCC",13.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,13.0
+"Narela, Delhi - DPCC",40.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,40.0
+"Talkatora Garden, Delhi - DPCC",8.0,NO2,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,8.0
+"Commonwealth Sports Complex, Delhi - DPCC",46.0,PM2.5,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,46.0
+"Commonwealth Sports Complex, Delhi - DPCC",78.0,CO,29-06-2026 02:00:00,Delhi,Delhi,28.6139,77.209,78.0
+"City Railway Station, Bengaluru - KSPCB",102.0,PM10,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,102.0
+"City Railway Station, Bengaluru - KSPCB",30.0,NO2,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,30.0
+"Jigani, Bengaluru - KSPCB",25.0,OZONE,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,25.0
+"BTM Layout, Bengaluru - CPCB",37.0,PM10,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,37.0
+"BTM Layout, Bengaluru - CPCB",4.0,NH3,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,4.0
+"BTM Layout, Bengaluru - CPCB",45.0,CO,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,45.0
+"Silk Board, Bengaluru - KSPCB",11.0,PM2.5,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,11.0
+"Silk Board, Bengaluru - KSPCB",0.0,SO2,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,0.0
+"Hombegowda Nagar, Bengaluru - KSPCB",13.0,PM2.5,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,13.0
+"Hombegowda Nagar, Bengaluru - KSPCB",4.0,CO,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,4.0
+"Hombegowda Nagar, Bengaluru - KSPCB",33.0,OZONE,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,33.0
+"Bapuji Nagar, Bengaluru - KSPCB",22.0,PM10,29-06-2026 02:00:00,Karnataka,Bengaluru,12.9716,77.5946,22.0
+"Ghatkopar, Mumbai - BMC",10.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,10.0
+"Ghatkopar, Mumbai - BMC",18.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,18.0
+"Kandivali West, Mumbai - BMC",11.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,11.0
+"Kurla, Mumbai - MPCB",29.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,29.0
+"Kurla, Mumbai - MPCB",29.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,29.0
+"Kurla, Mumbai - MPCB",14.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,14.0
+"Worli, Mumbai - MPCB",20.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,20.0
+"Worli, Mumbai - MPCB",3.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,3.0
+"Bandra Kurla Complex, Mumbai - MPCB",29.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,29.0
+"Navy Nagar-Colaba, Mumbai - IITM",11.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,11.0
+"Navy Nagar-Colaba, Mumbai - IITM",4.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,4.0
+"Navy Nagar-Colaba, Mumbai - IITM",26.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,26.0
+"Khindipada-Bhandup West, Mumbai - IITM",12.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,12.0
+"Chembur, Mumbai - MPCB",39.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,39.0
+"Chembur, Mumbai - MPCB",5.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,5.0
+"Kherwadi_Bandra East, Mumbai - MPCB",3.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,3.0
+"Kherwadi_Bandra East, Mumbai - MPCB",14.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,14.0
+"Kherwadi_Bandra East, Mumbai - MPCB",30.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,30.0
+"Byculla, Mumbai - BMC",1.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,1.0
+"Byculla, Mumbai - BMC",2.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,2.0
+"Borivali East, Mumbai - IITM",7.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,7.0
+"Borivali East, Mumbai - IITM",29.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,29.0
+"Bandra Kurla Complex, Mumbai - IITM",7.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,7.0
+"Bandra Kurla Complex, Mumbai - IITM",11.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,11.0
+"Deonar, Mumbai - IITM",15.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,15.0
+"Deonar, Mumbai - IITM",27.0,PM10,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,27.0
+"Deonar, Mumbai - IITM",3.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,3.0
+"Deonar, Mumbai - IITM",6.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,6.0
+"Chhatrapati Shivaji Intl. Airport (T2), Mumbai - MPCB",26.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,26.0
+"Siddharth Nagar-Worli, Mumbai - IITM",21.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,21.0
+"Siddharth Nagar-Worli, Mumbai - IITM",43.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,43.0
+"Malad West, Mumbai - IITM",3.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,3.0
+"Malad West, Mumbai - IITM",5.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,5.0
+"Mazgaon, Mumbai - IITM",19.0,PM2.5,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,19.0
+"Mazgaon, Mumbai - IITM",11.0,NO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,11.0
+"Sewri, Mumbai - BMC",7.0,OZONE,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,7.0
+"Chakala-Andheri East, Mumbai - IITM",7.0,NH3,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,7.0
+"Chakala-Andheri East, Mumbai - IITM",0.0,SO2,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,0.0
+"Chakala-Andheri East, Mumbai - IITM",1.0,CO,29-06-2026 02:00:00,Maharashtra,Mumbai,19.076,72.8777,1.0
+"Mansarovar Sector-12, Jaipur - RSPCB",23.0,CO,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,23.0
+"Mansarovar Sector-12, Jaipur - RSPCB",48.0,OZONE,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,48.0
+"Shastri Nagar, Jaipur - RSPCB",61.0,PM10,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,61.0
+"Shastri Nagar, Jaipur - RSPCB",7.0,NH3,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,7.0
+"Shastri Nagar, Jaipur - RSPCB",17.0,CO,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,17.0
+"Shastri Nagar, Jaipur - RSPCB",26.0,OZONE,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,26.0
+"Sector-2 Murlipura, Jaipur - RSPCB",24.0,OZONE,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,24.0
+"Police Commissionerate, Jaipur - RSPCB",57.0,PM2.5,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,57.0
+"Police Commissionerate, Jaipur - RSPCB",19.0,SO2,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,19.0
+"Adarsh Nagar, Jaipur - RSPCB",0.0,SO2,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,0.0
+"Adarsh Nagar, Jaipur - RSPCB",35.0,CO,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,35.0
+"RIICO Sitapura, Jaipur - RSPCB",25.0,PM2.5,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,25.0
+"RIICO Sitapura, Jaipur - RSPCB",12.0,CO,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,12.0
+"Mansarovar Sector-12, Jaipur - RSPCB",12.0,NH3,29-06-2026 02:00:00,Rajasthan,Jaipur,26.9124,75.7873,12.0
+"ICRISAT Patancheru, Hyderabad - TSPCB",11.0,CO,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,11.0
+"Kokapet, Hyderabad - TSPCB",55.0,PM10,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,55.0
+"Kokapet, Hyderabad - TSPCB",7.0,SO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,7.0
+"Kodungaiyur, Chennai - TNPCB",9.0,PM2.5,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,9.0
+"Kodungaiyur, Chennai - TNPCB",13.0,PM10,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,13.0
+"Perungudi, Chennai - TNPCB",0.0,NH3,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,0.0
+"Perungudi, Chennai - TNPCB",1.0,OZONE,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,1.0
+"Arumbakkam, Chennai - TNPCB",26.0,PM10,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,26.0
+"Arumbakkam, Chennai - TNPCB",0.0,SO2,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,0.0
+"Manali Village, Chennai - TNPCB",26.0,CO,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,26.0
+"Manali, Chennai - CPCB",19.0,PM2.5,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,19.0
+"Royapuram, Chennai - TNPCB",46.0,PM10,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,46.0
+"Royapuram, Chennai - TNPCB",29.0,OZONE,29-06-2026 02:00:00,Tamil Nadu,Chennai,13.0827,80.2707,29.0
+"Kompally Municipal Office, Hyderabad - TSPCB",2.0,NH3,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,2.0
+"IDA Pashamylaram, Hyderabad - TSPCB",2.0,NO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,2.0
+"Zoo Park, Hyderabad - TSPCB",8.0,PM2.5,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,8.0
+"Zoo Park, Hyderabad - TSPCB",7.0,NO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,7.0
+"Zoo Park, Hyderabad - TSPCB",2.0,SO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,2.0
+"Zoo Park, Hyderabad - TSPCB",23.0,OZONE,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,23.0
+"ECIL Kapra, Hyderabad - TSPCB",25.0,CO,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,25.0
+"Nacharam_TSIIC IALA, Hyderabad - TSPCB",51.0,PM10,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,51.0
+"Nacharam_TSIIC IALA, Hyderabad - TSPCB",4.0,NH3,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,4.0
+"Nacharam_TSIIC IALA, Hyderabad - TSPCB",9.0,SO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,9.0
+"Somajiguda, Hyderabad - TSPCB",11.0,SO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,11.0
+"Somajiguda, Hyderabad - TSPCB",22.0,OZONE,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,22.0
+"Gomti Nagar, Lucknow - UPPCB",16.0,PM10,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,16.0
+"Gomti Nagar, Lucknow - UPPCB",13.0,SO2,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,13.0
+"Gomti Nagar, Lucknow - UPPCB",45.0,OZONE,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,45.0
+"Kukrail Picnic Spot-1, Lucknow - UPPCB",4.0,SO2,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,4.0
+"Kendriya Vidyalaya, Lucknow - CPCB",42.0,CO,29-06-2026 02:00:00,Uttar Pradesh,Lucknow,26.8467,80.9462,42.0
+"New Malakpet, Hyderabad - TSPCB",12.0,NO2,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,12.0
+"Ramachandrapuram, Hyderabad - TSPCB",37.0,CO,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,37.0
+"Sanathnagar, Hyderabad - TSPCB",30.0,CO,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,30.0
+"Sanathnagar, Hyderabad - TSPCB",12.0,OZONE,29-06-2026 02:00:00,Telangana,Hyderabad,17.385,78.4867,12.0
+"Rabindra Bharati University, Kolkata - WBPCB",15.0,PM2.5,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,15.0
+"Rabindra Bharati University, Kolkata - WBPCB",20.0,OZONE,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,20.0
+"Rabindra Sarobar, Kolkata - WBPCB",12.0,PM2.5,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,12.0
+"Rabindra Sarobar, Kolkata - WBPCB",5.0,NH3,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,5.0
+"Rabindra Sarobar, Kolkata - WBPCB",7.0,SO2,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,7.0
+"Bidhannagar, Kolkata - WBPCB",14.0,PM2.5,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,14.0
+"Bidhannagar, Kolkata - WBPCB",24.0,OZONE,29-06-2026 02:00:00,West Bengal,Kolkata,22.5726,88.3639,24.0
