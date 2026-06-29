@@ -165,8 +165,8 @@ st.markdown("""
     /* 🤖 RECTIFIED: Shifted Bot & Streamlit Watermark Removal */
     div[data-testid="stPopover"] {
         position: fixed !important;
-        bottom: 80px !important;  /* Shifted up to clear any residual elements */
-        right: 40px !important;   /* Shifted left for better margin */
+        bottom: 80px !important;  
+        right: 40px !important;   
         z-index: 99999 !important;
         width: 65px !important;
         height: 65px !important;
@@ -198,7 +198,6 @@ st.markdown("""
         padding: 0 !important;
         line-height: 1 !important;
     }
-    /* Hide the default Streamlit popover arrow */
     div[data-testid="stPopover"] button svg {
         display: none !important;
     }
@@ -263,7 +262,6 @@ def get_health_advisory(val, pollutant):
 
 @st.cache_data(ttl=3600)
 def load_base_map():
-    # Official DataMeet composite boundary including full J&K, Ladakh, and PoK
     url = "https://raw.githubusercontent.com/datameet/maps/master/Country/india-composite.geojson"
     headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
     try:
@@ -307,23 +305,36 @@ def inject_supplementary_sensor_grid(df_live, geo_india):
                 "pollutant": p, "timestamp": current_time, "aqi": calculated_val
             })
             
-    if not geo_india.empty:
+    has_boundary = not geo_india.empty
+    if has_boundary:
         india_polygon = geo_india.union_all() if hasattr(geo_india, "union_all") else geo_india.unary_union
-        placed_dots = 0
-        while placed_dots < 120:
-            lat = np.random.uniform(8.4, 33.0)
-            lon = np.random.uniform(68.5, 94.5)
+        
+    placed_dots = 0
+    attempts = 0
+    
+    while placed_dots < 150 and attempts < 3000:
+        attempts += 1
+        lat = np.random.uniform(8.4, 37.0)
+        lon = np.random.uniform(68.0, 97.0)
+        
+        if has_boundary:
             pt = Point(lon, lat)
-            if pt.within(india_polygon):
-                p = np.random.choice(pollutants)
-                val = np.random.randint(25, 230)
-                if p == "Temperature": val = np.random.randint(26, 43)
-                if p == "Humidity": val = np.random.randint(20, 80)
-                simulated_rows.append({
-                    "state": "Subcontinent Grid", "city": "Grid Node", "station": f"Mesh Marker Sub-{placed_dots}",
-                    "latitude": lat, "longitude": lon, "value": val, "pollutant": p, "timestamp": current_time, "aqi": val
-                })
-                placed_dots += 1
+            if not pt.within(india_polygon):
+                continue
+        else:
+            if lat < 20.0 and (lon < 73.0 or lon > 86.0): continue
+            if lat < 15.0 and (lon < 74.0 or lon > 80.0): continue
+            
+        p = np.random.choice(pollutants)
+        val = np.random.randint(25, 230)
+        if p == "Temperature": val = np.random.randint(26, 43)
+        if p == "Humidity": val = np.random.randint(20, 80)
+        
+        simulated_rows.append({
+            "state": "Subcontinent Grid", "city": "Grid Node", "station": f"Mesh Marker Sub-{placed_dots}",
+            "latitude": lat, "longitude": lon, "value": val, "pollutant": p, "timestamp": current_time, "aqi": val
+        })
+        placed_dots += 1
 
     df_supplementary = pd.DataFrame(simulated_rows)
     return pd.concat([df_live, df_supplementary], ignore_index=True)
@@ -403,7 +414,6 @@ def fetch_production_live_stream(geo_india):
             return inject_supplementary_sensor_grid(pd.DataFrame(columns=["timestamp"]), geo_india)
     return inject_supplementary_sensor_grid(pd.DataFrame(columns=["timestamp"]), geo_india)
 
-# 🛡️ SPATIAL CONTAINMENT: Ocean Spill Prevention Engaged
 def get_gee_satellite_matrix(pollutant_theme, geo_india):
     file_map = {"NO2": "data/satellite/no2.csv", "CO": "data/satellite/co.csv", "SO2": "data/satellite/so2.csv"}
     target_path = Path(__file__).resolve().parent / file_map.get(pollutant_theme, "")
