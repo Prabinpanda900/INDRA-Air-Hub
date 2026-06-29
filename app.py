@@ -28,7 +28,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# 🌌 FORCE THEME BLUEPRINT: Premium Cyber Dark Matrix UI Theme
+# 🌌 FORCE THEME BLUEPRINT & CHATBOT CSS
 st.markdown("""
     <style>
     .stApp { background-color: #0d0f12 !important; }
@@ -161,6 +161,43 @@ st.markdown("""
     }
     .health-alert-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.4rem;}
     .health-alert-desc { font-size: 13px; line-height: 1.4; color: #e2e8f0;}
+    
+    /* Chatbot Floating UI Styling */
+    div[data-testid="stPopover"] {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 99999;
+    }
+    div[data-testid="stPopover"] > button {
+        background: linear-gradient(135deg, #0284c7, #22c55e) !important;
+        color: white !important;
+        border-radius: 50% !important;
+        width: 65px !important;
+        height: 65px !important;
+        border: none !important;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5) !important;
+        transition: transform 0.3s ease !important;
+        padding: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div[data-testid="stPopover"] > button:hover {
+        transform: scale(1.1) !important;
+    }
+    div[data-testid="stPopover"] > button p {
+        font-size: 32px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    div[data-testid="stPopoverBody"] {
+        width: 350px !important;
+        background-color: #111418 !important;
+        border: 1px solid #222933 !important;
+        border-radius: 12px !important;
+        box-shadow: 0 20px 25px -5px rgba(0,0,0,0.7) !important;
+    }
     
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
@@ -387,7 +424,6 @@ def get_gee_satellite_matrix(pollutant_theme, geo_india):
         simulated_points.append({"latitude": lat, "longitude": lon, "density": density_weight})
                 
     return pd.DataFrame(simulated_points)
-
 
 def calculate_idw_prediction(target_lat, target_lon, df_pollutant, power=2):
     if df_pollutant.empty: return 45
@@ -756,6 +792,44 @@ for entry in leaderboard_mock_data:
     st.markdown(f"<div class='leaderboard-row'><div class='cell-rank'>{entry['rank']}</div><div class='cell-city'>{entry['flag']} &nbsp; {entry['city']}</div><div class='cell-aqi-box'><span style='background-color: #1a202c; border: 1px solid #2d3748; padding: 4px 14px; border-radius: 20px; font-weight: 700; font-family: monospace; font-size: 15px; color: #ffffff;'>{entry['aqi']}</span></div><div class='cell-status' style='color: {entry['color']};'>{entry['status']}</div><div class='cell-multiplier'>{entry['mult']}</div></div>", unsafe_allow_html=True)
 
 st.markdown("</div>", unsafe_allow_html=True)
+
+# --- FLOATING AI CHATBOT (INDRA ASSISTANT) ---
+if "indra_chat_history" not in st.session_state:
+    st.session_state.indra_chat_history = [{"role": "assistant", "content": "System online. How can I assist you with AQI telemetry today?"}]
+
+def handle_chat():
+    user_query = st.session_state.chat_input_val
+    if user_query:
+        st.session_state.indra_chat_history.append({"role": "user", "content": user_query})
+        
+        q = user_query.lower()
+        if "aqi" in q or "air quality" in q:
+            reply = "An AQI between 0-50 is Good, 51-100 is Moderate, and anything over 150 is Unhealthy for Sensitive Groups."
+        elif "pm2.5" in q or "pm10" in q:
+            reply = "PM2.5 and PM10 refer to microscopic particulate matter. PM2.5 is especially dangerous as it can penetrate deep into the lungs."
+        elif "health" in q or "mask" in q:
+            reply = "If the AQI breaches 200, it is highly recommended to wear an N95 mask outdoors and strictly limit physical exertion."
+        elif "tech" in q or "architecture" in q:
+            reply = "I am built on Python, Streamlit, and GeoPandas, utilizing Sentinel-5P Satellite sweeps and the CPCB live gateway!"
+        else:
+            reply = "I am processing your query. Currently running in simulation mode, but I'm learning more about environmental analytics every day!"
+            
+        st.session_state.indra_chat_history.append({"role": "assistant", "content": reply})
+        st.session_state.chat_input_val = ""
+
+with st.popover("🤖"):
+    st.markdown("<h4 style='margin:0; color:#ffffff;'>INDRA AI Core</h4>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size:12px; color:#a0aec0; margin-bottom:1rem;'>Ask me about Air Quality metrics, health safety, or system architecture.</p>", unsafe_allow_html=True)
+    
+    chat_box = st.container(height=300)
+    with chat_box:
+        for msg in st.session_state.indra_chat_history:
+            if msg["role"] == "user":
+                st.markdown(f"<div style='background-color:#1c2229; padding:10px; border-radius:8px; margin-bottom:10px;'><b style='color:#38bdf8;'>You:</b> <span style='font-size:13px;'>{msg['content']}</span></div>", unsafe_allow_html=True)
+            else:
+                st.markdown(f"<div style='background-color:#15191e; border:1px solid #2d3748; padding:10px; border-radius:8px; margin-bottom:10px;'><b style='color:#22c55e;'>INDRA AI:</b> <span style='font-size:13px;'>{msg['content']}</span></div>", unsafe_allow_html=True)
+                
+    st.text_input("Type your message and press Enter:", key="chat_input_val", on_change=handle_chat)
 
 # --- PRODUCTION METRICS FOOTER LAYER ---
 st.markdown("<hr style='border-color: #222933; margin-top: 4rem; margin-bottom: 0;'>", unsafe_allow_html=True)
