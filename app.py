@@ -492,6 +492,7 @@ with layout_panel_left:
     if geo_data and geo_data.get('latitude') and geo_data.get('longitude'):
         current_gps = f"{geo_data['latitude']}_{geo_data['longitude']}"
         
+        # If this is a newly fetched GPS lock, auto-route to the absolute closest station
         if "last_gps" not in st.session_state or st.session_state.last_gps != current_gps:
             u_lat, u_lon = geo_data['latitude'], geo_data['longitude']
             min_dist = float('inf')
@@ -517,8 +518,8 @@ with layout_panel_left:
                         nearest_node = city_name
             
             st.session_state.city_selector = nearest_node
-            st.session_state.gps_distance = round(min_dist, 1)
             st.session_state.last_gps = current_gps
+            st.rerun() # Force instant UI update to the newly discovered nearest station
 
     with col_search:
         if "city_selector" not in st.session_state or st.session_state.city_selector not in search_pool:
@@ -527,11 +528,27 @@ with layout_panel_left:
             
         selected_location = st.selectbox("Target Station Area:", search_pool, key="city_selector", label_visibility="collapsed")
         
-    if "last_gps" in st.session_state and geo_data and geo_data.get('latitude'):
-        dist_val = st.session_state.get('gps_distance', 0.0)
+    df_loc_pool = df_live_master[df_live_master["city"].str.lower().str.strip() == selected_location.lower().strip()].copy()
+    
+    if not df_loc_pool.empty:
+        search_lat = df_loc_pool["latitude"].mean()
+        search_lon = df_loc_pool["longitude"].mean()
+    else:
+        search_lat, search_lon = MASTER_CITY_COORDINATES.get(selected_location.lower().strip(), (22.0, 78.5))
+        
+    # Dynamically calculate distance to whatever is currently selected in the dropdown
+    if geo_data and geo_data.get('latitude') and geo_data.get('longitude'):
+        u_lat, u_lon = geo_data['latitude'], geo_data['longitude']
+        
+        R = 6371.0
+        lat1, lon1 = np.radians(u_lat), np.radians(u_lon)
+        lat2, lon2 = np.radians(search_lat), np.radians(search_lon)
+        a = np.sin((lat2 - lat1) / 2)**2 + np.cos(lat1) * np.cos(lat2) * np.sin((lon2 - lon1) / 2)**2
+        current_distance = round(R * 2 * np.arctan2(np.sqrt(a), np.sqrt(1 - a)), 1)
+        
         st.markdown(f"""
             <div style='color:#22c55e; font-size:12px; font-weight:bold; margin-bottom:1rem; background-color:rgba(34,197,94,0.1); padding:6px 10px; border-radius:6px; border:1px solid rgba(34,197,94,0.2);'>
-                📍 GPS Locked: Nearest Hub is {st.session_state.city_selector} ({dist_val} km away)
+                📍 GPS Active: {selected_location} is {current_distance} km from your position
             </div>
         """, unsafe_allow_html=True)
     
@@ -539,14 +556,9 @@ with layout_panel_left:
     enable_ai_forecast = st.toggle("🔮 Activate Predictive AI Forecast Engine", value=False, key="indra_ai_toggle_switch")
     map_render_mode = st.toggle("🛰️ Overlay Sentinel-5P Satellite Heatmap", value=False, key="indra_satellite_toggle_switch")
     
-    df_loc_pool = df_live_master[df_live_master["city"].str.lower().str.strip() == selected_location.lower().strip()].copy()
-    
     if not df_loc_pool.empty:
-        search_lat = df_loc_pool["latitude"].mean()
-        search_lon = df_loc_pool["longitude"].mean()
         loc_state = df_loc_pool["state"].iloc[0]
     else:
-        search_lat, search_lon = MASTER_CITY_COORDINATES.get(selected_location.lower().strip(), (22.0, 78.5))
         loc_state = "India"
         
     target_vectors = ["AQI", "PM2.5", "PM10", "Temperature", "Humidity", "NO2", "SO2", "CO"]
